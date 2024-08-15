@@ -1276,6 +1276,9 @@ textarea.form-control {
     .em_countries, .partners_employees_countries h2{
         padding-inline: 10px;
     }
+    .employers_hero{
+        padding-top: 30px;
+    }
     .partners_employees_countries p{
         font-size: 12px;
         padding-inline: 42px;
@@ -1348,6 +1351,9 @@ textarea.form-control {
     }
     .hero .social_links li:last-child a svg {
         width: 7px;
+    }
+    .container{
+        padding-inline: 16px;
     }
     .partner.container {
         padding-inline: 28px;

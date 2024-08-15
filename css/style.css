@@ -136,6 +136,9 @@ header .dropdown-menu{
     background-color: #fff;
     color: var(--main-color);
     transition: var(--transition-hover);
+    .dropdown-item{
+        padding: 10px 22px 10px 10px;
+    }
     .dropdown-item:focus, .dropdown-item:hover{
         color: var(--main-color);
         background-color: var(--light_aqua_opacity_50_color);
@@ -1246,6 +1249,14 @@ textarea.form-control {
     .slick-next:before, .slick-prev:before{
         line-height: unset;
     }
+    header .dropdown-menu{
+        width: fit-content;
+    }
+    header .dropdown-menu{
+        .dropdown-item {
+            padding: 10px 16px 10px 10px;
+        }
+    }
 }
 @media (max-width: 768px) {
     .hero_text p{
@@ -1358,7 +1369,7 @@ textarea.form-control {
     .partners_slider, .partners_slider .partner_logo{
         height: 143px;
     }
-    .slick-slide img{
+    .partners_slider .slick-slide img{
         max-width: 127px;
     }
     form{
@@ -1627,11 +1638,9 @@ textarea.form-control {
     .svg_locat svg{
         height: 16px;
     }
-    /* .job_offers .container {
-        margin-top: 25px;
-        padding-block: 28px;
+    .job_offers .container {
         padding-inline: 25px;
-    } */
+    }
     .work_Europe_jobs.job_offers h3{
         font-size: 20px;
         line-height: 29.04px;
@@ -2242,4 +2251,4 @@ textarea.form-control {
     .portfolio{
         padding-inline: 210px;
     }
- }
+}

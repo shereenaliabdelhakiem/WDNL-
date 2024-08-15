@@ -1,0 +1,2245 @@
+*, p, h1, h2, h3, h4, h5, h6, ul, .navbar{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --main-color: #265078;
+    --text-color: #022140;
+    --identity-color: #CC0000;
+    --light-gray-color: #E6E8ED;
+    --white-color: #FDFDFD;
+    --light-aqua-color: #ECF5FF;
+    --light_aqua_opacity_50_color: rgba(236, 245, 255, 0.5);
+    --secondary_font: "Open Sans", sans-serif;
+    --transition-hover: all 0.2s ease-in-out;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+    line-height: unset;
+}
+body.no-scroll{
+    overflow-y: hidden;
+}
+body.no-scroll::before {
+    content: " ";
+    position: absolute;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, .6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    height: 1000000000px;
+}
+.navbar-toggler .header__toggleIconClose{
+    display: none;
+}
+.navbar-toggler.opened .header__toggleIconMenu{
+    display: none;
+}
+.navbar-toggler.opened .header__toggleIconClose{
+    display: block;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler {
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: .25s ease-out;
+    border-radius: 8px;
+}
+.navbar-toggler:hover{
+    background-color: var(--identity-color);
+}
+.navbar-toggler:hover svg path{
+    fill: #fff;
+}
+.navbar.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* Global variables */
+.bg_aqua_light_opacity{
+    background-color: var(--light_aqua_opacity_50_color);
+}
+.bg_aqua_light{
+    background-color: var(--light-aqua-color);
+}
+h2.secodary_font{
+    font-family: var(--secondary_font);
+}
+h2 span{
+    font-weight: 400;
+}
+.common_text, .candidates_hero .hero_text h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.7px;
+}
+.main_btn{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    padding: 14px 30px;
+    border: 0;
+}
+.main_btn:hover{
+    background-color: var(--identity-color);
+    color: #fff;
+}
+.site_btn{
+    font-weight: 800;
+    letter-spacing: 1.76px;
+    border-radius: 56px;
+    display: block;
+    width: fit-content;
+}
+.form_btn {
+    width: 100%;
+    border-radius: 61px;
+    font-weight: 600;
+    margin-top: 25px;
+    line-height: 24px;
+}
+/* index */
+header .container-fluid {
+    padding-left: 44px;
+    padding-right: 64px;
+    height: 72px;
+    background-color: #fff;
+    box-shadow: 0px 7px 5.7px 0px #0000000A;
+    z-index: 99999;
+}
+header .dropdown-menu{
+    min-width: unset;
+    background-color: #fff;
+    color: var(--main-color);
+    transition: var(--transition-hover);
+    .dropdown-item:focus, .dropdown-item:hover{
+        color: var(--main-color);
+        background-color: var(--light_aqua_opacity_50_color);
+    }
+    &.show{
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: -1px;
+    }
+}
+.nav-link.dropdown-toggle {
+    padding: 10px 6px 9px 9px;
+    border: 1px solid #BACEDE;
+    background-color: #F2F8FD;
+    border-radius: 7px;
+    &.show{
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+.navbar {
+    transition: var(--transition-hover);
+}
+.navbar-brand {
+    color: var(--identity-color) !important;
+    filter: drop-shadow(-1.44px 2.88px 2.88px #0000001A);
+    font-size: 28.49px;
+    line-height: 35.66px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+.navbar-collapse.show {
+    right: 0;
+}
+.hero{
+    text-align: center;
+}
+.hero.main_hero, .candidates_hero {
+    padding-top: 30px;
+    height: 357px;
+    background-color: #ECF5FF;
+    background-size: 139%;
+    background-repeat: no-repeat;
+    background-image: url(../img/about_hero_img.png);
+    background-position: center bottom;
+}
+.hero.main_hero.ru_hero{
+    padding-top: 20px;
+}
+.candidates_hero{
+    background-image: url(../img/candidates_hero_img.png);
+    height: 230px;
+    background-color: unset;
+}
+.hero_text h1 span {
+    font-weight: 300;
+}
+.navbar-nav {
+    gap: 32px;
+    font-size: 14px;
+}
+.navbar{
+    transition: var(--transition-hover);
+}
+.nav-link {
+    text-transform: capitalize;
+    position: relative;
+    width: fit-content;
+    transition: var(--transition-hover);
+    text-align: center;
+    color: var(--main-color) !important;
+}
+.nav-link.active {
+    color: var(--identity-color) !important;
+    font-weight: 700;
+}
+.nav-link.active::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: -10px;
+    background-color: var(--identity-color);
+    height: 5px;
+    box-shadow: 0px 6px 8.5px 0px #CC000096;
+    border-radius: 32px;
+    left: 0;
+}
+.hero_text h1, .candidates_hero .hero_text h1{
+    font-size: 20px;
+    line-height: 25.04px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50.08px;
+}
+h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.55px;
+    letter-spacing: 0.08em;
+}
+.hero_text p {
+    line-height: 20.3px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    max-width: 680px;
+    margin-inline: auto;
+}
+.hero .social_links {
+    width: fit-content;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 62px;
+}
+.hero .social_links li a {
+    width: 28.47px;
+    height: 28.47px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 34px;
+    transition: background-color 0.2s ease-in-out;
+}
+.hero .social_links li a svg {
+    width: 14px;
+}
+.hero .social_links li a:hover svg path{
+    fill: var(--white-color);
+}
+.partner {
+    padding-top: 40px;
+    padding-bottom: 62px;
+}
+.partner_text p {
+    margin-top: 7px;
+    margin-bottom: 20px;
+    padding-right: unset;
+    margin-inline: auto;
+}
+.partner_inner_img {
+    left: 42px;
+    padding: 5px 0 5px 6px;
+    bottom: -18px;
+    right: -20px;
+    width: fit-content;
+    background-color: #fff;
+}
+.location {
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+.location .location_text h2 {
+    margin-bottom: 15px;
+}
+.location_text p:not(:first-child) {
+    margin-bottom: 10px;
+}
+.world_map_col {
+    margin-top: 35px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.cooperation_benefits {
+    padding-top: 50px;
+    padding-bottom: 39px;
+}
+.cooperation_benefits h2 {
+    margin-bottom: 20px;
+}
+.benefit_svg_container, .benefit_svg_container_hover {
+    bottom: 0;
+    right: 0;
+}
+.benefit, .cooperation_benefits .benefit {
+    padding: 15px 14px;
+    gap: 13px;
+    margin-bottom: 11px;
+    transition: var(--transition-hover);
+    overflow: hidden;
+    min-height: 193px;
+    border-radius: 25px;
+}
+.benefit h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.icon_box.circled_icon_container, .circled_icon_container {
+    border-radius: 32.5px;
+    background: linear-gradient(132.89deg, #265078 3.43%, #022140 100%);
+    transition: var(--transition-hover);
+    box-shadow: 0px 9px 10.3px 0px #26507891;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cooperation_benefits .benefit:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: 0px 28px 33.6px 0px #02214054;
+}
+.cooperation_benefits .benefit:hover .circled_icon_container{
+    background: #fff;
+}
+.cooperation_benefits .benefit:hover .circled_icon_container svg path{
+    fill: var(--text-color);
+}
+.cooperation_benefits .benefit:hover .benefit_svg_container{
+    display: none;
+}
+.cooperation_benefits .benefit:hover .benefit_svg_container_hover{
+    display: block;
+}
+.profile_cooperation {
+    padding-block: 30px;
+}
+.profile_text h2 {
+    margin-bottom: 13px;
+}
+.icon_container {
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    background-color: var(--text-color);
+}
+.icon_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_cols {
+    margin-top: 30px;
+}
+.profile_parts {
+    margin-top: 58px;
+}
+.svg_container {
+    max-width: 27.78px;
+}
+.profile_part h5 {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.partners_slider{
+    box-shadow: 4px 0px 20px 0px #0000000D;
+    overflow: hidden;
+    height: 167px;
+}
+.partners_slider .partner_logo{
+    height: 167px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.contact {
+    padding-top: 51px;
+    padding-bottom: 62px;
+}
+.contact_text {
+    margin-bottom: 51px;
+    max-width: 606px;
+}
+.contact_form {
+    background-color: var(--light-gray-color);
+    padding: 12px;
+    border-radius: 13px;
+    max-width: 592px;
+    margin-inline: auto;
+}
+form {
+    box-shadow: 0px 22px 22.2px 0px #00000017;
+    padding: 30px;
+    border-radius: 14px;
+    background-color: #fff;
+}
+.form_group {
+    margin-bottom: 16px;
+}
+form label {
+    line-height: 18.75px;
+    color: #393261;
+    margin-bottom: 16px !important;
+    font-weight: 400;
+}
+.form-control {
+    border: 1px solid #3932613D;
+    height: 50px;
+    padding-inline: 16px;
+    border-radius: 11px;
+}
+.form-check-label {
+    margin-left: 5px;
+}
+.form-check-input {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #39326180;
+}
+.form-check {
+    margin-bottom: 15px;
+}
+.form-check-input:focus{
+    box-shadow: none;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--main-color);
+}
+footer {
+    background-color: var(--text-color);
+    color: rgba(255, 255, 255, 1);
+    padding-top: 25px;
+    padding-bottom: 13px;
+}
+footer h3 {
+    margin-bottom: 25px;
+    font-size: 36.04px;
+    font-weight: 900;
+    line-height: 45.12px;
+    letter-spacing: 0.05em;
+    width: fit-content;
+}
+footer h3 span{
+    font-weight: 900;
+}
+footer ul {
+    gap: 39px;
+}
+.social_links li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    border-radius: 34px;
+    background-color: rgba(255, 255, 255, 0.06);
+    transition: background-color 0.2s ease-in-out;
+}
+.social_links li a:hover{
+    background-color: var(--main-color);
+}
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 24px;
+    margin-top: 32px;
+    justify-content: space-between;
+    text-align: center;
+    opacity: 0.6;
+}
+.copyright a {
+    color: rgba(255, 255, 255, 1);
+}
+footer h3 span {
+    filter: drop-shadow(-1.44px 2.88px 0 rgba(0, 0, 0, 0.1));
+}
+.back_to_top {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color);
+    position: fixed;
+    width: 34px;
+    height: 34px;
+    opacity: 0;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+.back_to_top.show {
+    opacity: 1;
+}
+.back_to_top img {
+    width: 14px;
+    height: 14px;
+}
+.back_to_top:hover{
+    background-color: var(--main-color);
+    box-shadow: 0px 9px 10.3px 0px #26507891;
+}
+.world_map img {
+    min-width: 100%;
+}
+footer .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.form-check-input:checked {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-border);
+}
+.form-check-input {
+    border: 1px solid #39326180;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px !important;
+}
+.employers_hero {
+    padding-top: 43px;
+    background-color: #F2F5F8;
+}
+.all_countries {
+    gap: 25px;
+    z-index: 1;
+    margin-inline: auto;
+    width: fit-content;
+}
+.employee_countries .common_text {
+    max-width: 460px;
+    margin-inline: auto;
+}
+.all_countries {
+    gap: 25px;
+    z-index: 1;
+    margin-inline: auto;
+    width: fit-content;
+}
+.employee_countries .countries_div .country_div:not(:last-child) {
+    margin-bottom: 20px;
+}
+.employee_countries .country_div {
+    background-color: #FFFFFF;
+    padding: 5px 27px 5px 5px;
+    width: fit-content;
+    border-radius: 25px;
+    gap: 8px;
+    filter: drop-shadow(0px 13px 19px #0000000F);
+}
+.employee_countries .country_icon_con {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.WDNL_recruiting{
+    padding-block: 60px;
+    overflow-x: hidden;
+}
+.WDNL_recruiting h2{
+    margin-bottom: 10px;
+}
+.WDNL_recruiting p{
+    line-height: 24px;
+    color: rgba(2, 33, 64, 0.9);
+}
+.recruiting-slider{
+    margin-top: 50px;
+    position: relative;
+}
+.recruiting-slider .slick-slide {
+    margin: 0 15px;
+}
+.recruite-box{
+    background-color: #fff;
+    color: var(--text-color);
+    padding: 20px;
+    box-shadow: 10px 10px 33.6px 0px rgba(2, 33, 64, 0.05);
+    border-radius: 20px;
+    min-height: 269px;
+}
+.recruite-box h5{
+    line-height: 25.2px;
+}
+.recruite-box ul li{
+    line-height: 24px;
+    color: rgba(2, 33, 64, 0.9);
+}
+.recruite-box .recruit-upper{
+    margin-bottom: 20px;
+}
+.recruite-box .icon_box{
+    background-color: var(--light-aqua-color);
+    border-radius: 32.5px;
+    margin-right: 20px;
+}
+.Our_job {
+    background-image: url(../img/Our_job.png);
+    padding-top: 116px;
+    padding-bottom: 103px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.our_job_text {
+    max-width: 796px;
+    margin-inline: auto;
+    text-align: center;
+}
+.our_job_text h3 {
+    padding-inline: 87px;
+    margin-bottom: 20px;
+}
+.cooperation_benefits.employing_benefits {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.cooperation_benefits.employing_benefits h2 {
+    margin-bottom: 0;
+}
+.cooperation_benefits.employing_benefits .common_text {
+    margin-bottom: 45px;
+}
+.benefit_upper {
+    gap: 23px;
+    margin-bottom: 20px;
+}
+form label.sm_label {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0 !important;
+}
+form label span {
+    font-weight: 600;
+}
+.contact .contact_detail:not(:last-child) {
+    margin-bottom: 30px;
+}
+.contact_icon_box {
+    border-radius: 50%;
+    background-color: rgba(38, 80, 120, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_detail span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-align: left;
+}
+h3 {
+    font-weight: 700;
+}
+h3 span {
+    font-weight: 400;
+}
+.candidates_hero .hero_text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.alt_btn {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 18.75px;
+    letter-spacing: 0.11em;
+    background-color: #fff;
+    padding: 20px 43.5px 18px;
+    min-width: 254px;
+    border-radius: 10px;
+    color: var(--text-color);
+    transition: var(--transition-hover);
+    display: block;
+    width: fit-content;
+}
+.alt_btn:hover {
+    background-color: var(--identity-color);
+    color: #fff;
+}
+.job_offer {
+    padding: 34.63px 16px 21.65px 16px;
+    background-color: #fff;
+    border-radius: 14px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 10px 10px 33.6px 0px #0221400D;
+    gap: 25px;
+    margin-bottom: 36px;
+}
+.offer_img_container {
+    width: 79px;
+    border-radius: 14px;
+    border: 1px solid #FFFFFF;
+    overflow: hidden;
+}
+.offer_text h5{
+    margin-bottom: 20px;
+    letter-spacing: 0.08em;
+}
+.offer_text span {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.84px;
+    letter-spacing: 0.08em;
+    margin-bottom: 5px;
+}
+.why_choose .benefit {
+    padding: 20px 13px 18px 23px;
+    border-radius: 17px;
+    margin-bottom: 28px;
+}
+.icon_box_60 {
+    width: 60px;
+    height: 60px;
+    background: #113457;
+    margin-bottom: 20px;
+}
+.why_choose .benefit h5 {
+    margin-bottom: 9px;
+    line-height: 20px;
+}
+.why_choose .benefit p {
+    font-weight: 300;
+}
+.services {
+    padding-top: 47px;
+    padding-bottom: 86px;
+}
+.services h2 {
+    margin-bottom: 12px;
+}
+.services .form_btn {
+    margin-top: 20px;
+    width: fit-content;
+    margin-inline: auto;
+    padding-inline: 59.5px;
+}
+.main_btn {
+    margin-top: 5px;
+}
+/* ======================================= Partners page styles ==================================*/
+.representative{
+    padding-block: 80px;
+}
+.representative_text h2{
+    margin-bottom: 10px;
+}
+.partners_services{
+    padding-block: 45px;
+}
+.partners_services_text ol{
+    max-width: 900px;
+    margin-top: 19px;
+}
+.partners_services_text ol li.common_text{
+    margin-bottom: 15px;
+    line-height: 32.4px;
+}
+.partners_employees_countries{
+    padding-top: 63px;
+    padding-bottom: 80px;
+}
+.partners_employees_countries h2{
+    max-width: 808px;
+}
+.em_country_container{
+    width: 44px;
+    min-width: 44px;
+    height: 32px;
+    border-radius: 7px;
+}
+.em_countries{
+    padding-inline: 40px;
+    margin-top: 54px;
+}
+.em_countries .country_div{
+    border: 1px solid #D6DEE5;
+    background-color: #fff;
+}
+.em_countries .country_div h5{
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 0.055em;
+    font-size: 18px;
+}
+.partners_employees_countries p{
+    color: #7A9BBB;
+    font-size: 15px;
+    line-height: 31.35px;
+}
+.partners_employees_countries h2{
+    margin-bottom: 36px;
+}
+.best_partner{
+    background-image: url(../img/best_partner_left.png), url(../img/best_partner_right.png);
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--main-color);
+    background-blend-mode: multiply;
+}
+.best_partner .container{
+    padding-block: 92px;
+}
+.best_partner_text{
+    color: #fff;
+}
+.best_partner_text p{
+    margin-top: 15px;
+}
+.slide-item:not(:last-child){
+    margin-right: 26px;
+}
+.slide-item img{
+    width: 340px;
+    /* height: 369px; */
+    object-fit: cover;
+    border-radius: 14px;
+    &:first-child{
+        margin-bottom: 34px;
+    }
+}
+.portfolio{
+    padding-block: 50px;
+    h2{
+        margin-bottom: 43px;
+    }
+}
+.portfolio .slick-prev{
+    right: 70px;
+    left: unset;
+}
+.portfolio .slick-prev:before{
+    content: url(../img/prev-arrow.svg);;
+}
+.portfolio .slick-next:before{
+    content: url(../img/next-arrow.svg);;
+}
+.portfolio .slick-arrow{
+    top: -66px;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    transition: var(--transition-hover);
+}
+.portfolio .slick-arrow:before{
+    color: var(--main-color);
+}
+.portfolio .slick-next{
+    right: 0;
+    background-color: var(--main-color);
+}
+.portfolio .slick-slide{
+    margin: 0 13px;
+}
+/* ======================================= Contact page styles ==================================*/
+.contact_loaction{
+    position: relative;
+    z-index: 0 !important;
+}
+.contact_offices{
+    position: relative;
+    gap: 24px;
+    width: fit-content;
+    padding-bottom: 143px;
+    z-index: 99;
+}
+.contact_office{
+    padding: 20px;
+    border-radius: 19px;
+    box-shadow: 0px 29px 40.2px 0px #00000012;
+    background-color: #fff;
+}
+.contact_office h4{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 31.3px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.cont_off_icon{
+    border-radius: 11px;
+    background-color: var(--text-color);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 22px;
+}
+.cont_off_detail .common_text{
+    line-height: 21.6px;
+}
+.cont_off_detail:not(:last-child){
+    margin-bottom: 25px;
+}
+/* ======================================= vacancy page styles ==================================*/
+.work_Europe.container-fluid{
+    padding-inline: 25px;
+    padding-top: 13px;
+}
+.work_box_upper{
+    margin-bottom: 60px;
+}
+.work_Europe .work_heading{
+    color: var(--main-color);
+    font-size: 18px;
+    line-height: 22.54px;
+    margin-bottom: 19px;
+}
+.text_title{
+    color: var(--main-color);
+}
+.work_text .path_text{
+    font-size: 14px;
+    line-height: 17.53px;
+    letter-spacing: 0.06em;
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 22px;
+}
+.work_text .path_text:before{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 32px;
+}
+.svg_locat + p{
+    letter-spacing: 0.08em;
+}
+.work_dev_head{
+    padding: 19px 28px;
+    border-radius: 81px;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+.work_dev_head span{
+    font-size: 20px;
+    /* line-height: 45.6px; */
+    /* padding-block: 8px; */
+}
+.work_num{
+    font-size: 84px;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 0.08em;
+}
+.work_adv .common_text{
+    font-size: 18px;
+    line-height: 41.04px;
+    letter-spacing: 0.08em;
+    padding-inline: 15px;
+}
+.work_article p{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
+}
+.work_article p:not(:last-child) {
+    margin-bottom: 24px;
+}
+/* ======================================= Work page styles ==================================*/
+.job_sum_img{
+    overflow: hidden;
+    border-radius: 4px;
+}
+.job_summary{
+    padding: 12px 15px 17px 15px;
+    background-color: #fff;
+    box-shadow: 0px 29px 40.2px 0px #00000012;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    h4{
+        color: var(--text-color);
+    }
+}
+.sum_item{
+    margin-top: 8px;
+}
+.sum_item span{
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    color: var(--text-color);
+}
+.svg_sum{
+    min-width: 26px;
+}
+.work_Europe .main_btn{
+    margin-top: 17px;
+}
+.back_to_top{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.back_to_top:hover{
+    background-color: var(--main-color);
+    box-shadow: 0px 9px 10.3px 0px #26507891;
+}
+.back_to_top.show{
+    opacity: 1;
+}
+.back_to_top img{
+    width: 14px;
+    height: 14px;
+}
+.offer_text h5 span {
+    letter-spacing: 0.08em;
+    font-weight: 500;
+}
+.job_sum_img{
+    width: 112px;
+    height: 112px;
+    margin-right: 8px;        
+}
+textarea.form-control {
+    height: 100px;
+}
+@media(max-width: 991px){
+    .em_countries{
+        padding-inline: 15px;
+        margin-top: 30px;
+    }
+    .em_countries .country_div h5{
+        font-size: 12px;
+    }
+    .em_countries .country_div{
+        padding-block: 6.71px;
+        padding-inline: 11.17px;
+        margin-bottom: 20px;
+        border-radius: 7.46px;  
+        gap: 9.7px;
+    }
+    .em_country_container{
+        width: 32.82px;
+        min-width: 32.82px;
+        height: 23.87px;      
+    }
+    .representative {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .work_dev_svg img, .svg_sum img{
+        height: 14px;
+        width: fit-content;
+    }
+    .work_text .text_title {
+        margin-bottom: 5px;
+    }
+    .work_img{
+        border-radius: 16px;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+    .work_Europe.container-fluid {
+        padding-inline: 25px;
+        padding-top: 13px;
+    }
+    .summary_text h4{
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    }
+    .circled_icon_container .benefit_svg {
+        width: 20px;
+    }
+    .icon_box_60 {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 9px;
+    }
+    .branch_hero_img {
+        margin-top: 41px;
+    }
+    .navbar-nav {
+        gap: 18px;
+        padding-top: 24px;
+    }
+    .navbar-collapse {
+        right: -280px;
+        height: calc(100vh - 52px);
+        max-height: calc(100vh - 52px);
+        background-color: #fff;
+        position: absolute;
+        top: 52px;
+        width: 270px;
+        padding: 16px 24px;
+        z-index: 9999;
+        text-align: left;
+        transition: var(--transition-hover);
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 25.04px;
+    }
+    .icon_box.circled_icon_container{
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+    .benefit p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .benefit h5{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.6px;
+        word-break: break-word;
+    }
+    header .container-fluid {
+        height: 52px;
+        padding-left: 20px;
+        padding-right: 16px;
+    }
+    .profile_text{
+        padding-inline: 8px;
+    }
+    .cooperation_benefits.employing_benefits .benefit {
+        min-height: 226px;
+        padding: 15px 10px 14px 14px;
+    }
+    .benefit_upper{
+        gap: 10px;
+        margin-bottom: 13px;
+    }
+    .employee_countries {
+        padding-top: 50px;
+        margin-bottom: 38px;
+    }
+    .employee_countries h3:has( +.contact_form){
+        margin-bottom: 52px;
+    }
+    .employee_countries .common_text{
+        margin-top: 21.7px;
+        margin-bottom: 50px;
+    }
+    .endless_possibilities .img-container, .services .img-container{
+        margin-top: 25px;
+        padding-inline: 38px;
+    }
+    .endless_possibilities {
+        padding-top: 33px;
+        margin-bottom: 50px;
+    }
+    .why_choose h2{
+        margin-bottom: 30px;
+    }
+    .world_map_col {
+        position: unset;
+        margin-top: 35px;
+    }
+    .representative_text h2 {
+        margin-bottom: 9px;
+        font-size: 18px;
+    }
+    .representative_text p{
+        margin-bottom: 9px;
+    }
+    .contact_loaction{
+        height: 375px;
+    }
+    .contact_offices .contact_office:first-child{
+        /* margin-top: -60px; */
+        margin-bottom: 20px;
+    }
+    .contact_offices{
+        padding-bottom: 50px;
+    }
+    .contact_office h4{
+        font-size: 16px;
+        line-height: 20.03px;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+    }
+    .cont_off_icon{
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+        margin-right: 6px;
+    }
+    .cont_off_detail .common_text{
+        font-size: 14px;
+    }
+    .cont_off_icon svg{
+        width: 12px;
+    }
+    .portfolio .slick-arrow{
+        width: 34px;
+        height: 34px;
+    }
+    .portfolio .slick-prev:before{
+        content: url(../img/res-prev-arrow.svg);
+    }
+    .portfolio .slick-next:before{
+        content: url(../img/res-next-arrow.svg);
+    }
+    .slick-next:before, .slick-prev:before{
+        line-height: unset;
+    }
+}
+@media (max-width: 768px) {
+    .hero_text p{
+        font-size: 14px;
+        line-height: 20.3px;
+    }
+    .partners_employees_countries{
+        padding-top: 22px;
+        padding-bottom: 50px;
+    }
+    .partners_employees_countries h2{
+        margin-bottom: 20px;
+    }
+    .em_countries{
+        margin-top: 30px;
+    }
+    .em_countries, .partners_employees_countries h2{
+        padding-inline: 10px;
+    }
+    .partners_employees_countries p{
+        font-size: 12px;
+        padding-inline: 42px;
+        line-height: 18px;
+    }
+    .best_partner .container{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .best_partner_svg{
+        max-width: 194px;
+    }
+    .best_partner_text h2{
+        font-size: 12px;
+        line-height: 15.02px;
+    }
+    .best_partner_text p{
+        font-size: 9px;
+        margin-top: 10px;
+        line-height: 11.7px;
+    }
+    .partners_services{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .partners_services_text ol li.common_text{
+        line-height: 25.2px;
+        margin-bottom: 10px;
+    }
+    .partners_hero h2{
+        font-size: 27px;
+        line-height: 33.8px;
+        margin-bottom: 5px;
+    }
+    .partners_hero h2 + p{
+        font-size: 10px;
+        line-height: 14.5px;
+        margin-bottom: 15px;
+        max-width: 215px;
+    }
+    .employers_hero.partners_hero{
+        padding-top: 16px;
+    }
+    form label {
+        font-size: 12px;
+        line-height: 14.06px;
+        margin-bottom: 12px !important;
+    }
+    .form-control {
+        height: 38px;
+        padding-inline: 12px;
+        border-radius: 6px;
+        border: 1px solid #3932613D;
+    }
+    .form_btn{
+        padding: 9.5px 12px;
+        margin-top: 5px;
+        font-size: 12px;
+        letter-spacing: 0.11em;
+    }
+    .copyright p{
+        font-size: 14px;
+    }
+    .copyright {
+        padding-left: 26px;
+        padding-right: 26px;
+        gap: 15px;
+        padding-top: 15px;
+        margin-top: 25px;
+    }
+    .hero .social_links li:last-child a svg {
+        width: 7px;
+    }
+    .partner.container {
+        padding-inline: 28px;
+    }
+    .hero .social_links{
+        left: 16px;
+    }
+    h3{
+        line-height: 20.03px;
+        font-size: 20px;
+    }
+    .hero .main_btn {
+        font-size: 12px;
+        min-width: 147px;
+        line-height: 14.06px;
+        padding-block: 11.5px;
+        border-radius: 35px;
+    }
+    .partners_slider, .partners_slider .partner_logo{
+        height: 143px;
+    }
+    .slick-slide img{
+        max-width: 127px;
+    }
+    form{
+        padding: 30px 20px;
+    }
+    .contact_text{
+        padding-inline: 16px;
+    }
+    .contact_text h2 {
+        margin-bottom: 20px;
+        letter-spacing: 0.055em;
+        line-height: 29.04px;
+    }
+    .contact_icon_box {
+        width: 31.9px;
+        min-width: 31.9px;
+        height: 31.9px;
+        margin-right: 12px;
+    }
+    .contact_icon_box img{
+        width: 12.52px;
+    }
+    .contact_detail span{
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+    .contact .contact_detail:not(:last-child){
+        margin-bottom: 12px;
+    }
+    .contact_text {
+        margin-bottom: 40px;
+    }
+    .contact{
+        padding-bottom: 50px;
+    }
+    .contact.pt_34{
+        padding-top: 34px;
+    }
+    .cooperation_benefits.employing_benefits .row .col-6{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .cooperation_benefits.employing_benefits {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .cooperation_benefits.employing_benefits .common_text {
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    .cooperation_benefits.employing_benefits h2,
+    .cooperation_benefits.employing_benefits .common_text{
+        padding-inline: 40px;
+    }
+    .Our_job{
+        padding-top: 50px;
+        padding-bottom: 58px;
+    }
+    .our_job_text h3{
+        padding-inline: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22.54px;
+    }
+    .form-check-input {
+        width: 16px;
+        height: 16px;
+    }
+    .employee_countries h3{
+        font-size: 16px;
+        margin-bottom: 17px;
+    }
+    .employee_countries .country_icon_con{
+        width: 27.53px;
+        height: 27.53px;
+    }
+    .employee_countries .country_div{
+        min-width: 134.21px;
+        padding: 3.44px;
+    }
+    .country_div h5{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20.04px;
+    }
+    .employer_map{
+        top: 100px;
+    }
+    .employee_countries .countries_div .country_div:not(:last-child) {
+        margin-bottom: 13px;
+    }
+    .why_choose{
+        padding-bottom: 25px;
+        padding-top: 30px;
+    }
+    .why_choose h2{
+        margin-bottom: 15px;
+    }
+    .candidates_hero .hero_text h5 {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 15.02px;
+        margin-bottom: 12px;
+        margin-top: 10px; 
+    }
+    .candidates_hero .hero_text h1{
+        margin-bottom: 10px;
+    }
+    .alt_btn{
+        padding: 8px 22px;
+        font-size: 6px;
+        line-height: 7.03px;
+        letter-spacing: 0.11em;
+        border-radius: 28px;
+        min-width: unset;
+    }
+    .job_offers:not(.work_Europe_jobs){
+        padding-top: 38px;
+        padding-bottom: 32px;
+    }
+    .work_Europe_jobs .job_offer{
+        padding: 8px 7px;
+        margin-bottom: 14px;
+        gap: 12px;
+    }
+    .work_Europe_jobs .offer_text span {
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 17.84px;
+        letter-spacing: 0.08em;
+        margin-bottom: 5px;
+    }
+    .work_Europe_jobs .offer_text h5 span{
+        font-size: 14px;
+        line-height: 16.66px;
+        letter-spacing: 0.08em;
+        font-weight: 500;
+    }
+    .work_Europe_jobs .offer_text h5{
+        margin-bottom: 0;
+    }
+    .job_offers h3{
+        line-height:25.04px;
+        margin-bottom: 23px;
+        padding-inline: 40px;
+    }
+    .offer_img_container{
+        width: 48px;
+        height: 52px;
+        border-radius: 14px;
+        border: 1px solid #FFFFFF;
+    }
+    .work_Europe_jobs .offer_img_container{
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+    }
+    .offer_text h5 {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.28px;
+        letter-spacing: 0.08em;
+        margin-bottom: 16px;
+    }
+    .offer_text span{
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 11.9px;
+        letter-spacing: 0.08em;
+    }
+    .candidates_job_offers .job_offer{
+        padding: 19px 8px;
+        gap: 10px;
+        margin-bottom: 11px;
+    }
+    .job_offers .main_btn{
+        padding: 12px 16px;
+        font-size: 10px;
+        margin-top: 14px;
+    }
+    .work_Europe .main_btn, .work_Europe .job_offers .main_btn{
+        padding-inline: 21.5px;
+        padding-block: 10px;
+        font-size: 10px;
+        letter-spacing: 0.11em;
+        min-width: unset !important;
+    }
+    /* :not(:has(.)) .job_offers .main_btn{
+        min-width: 204px;
+    } */
+    .endless_possibilities_text h2{
+        margin-bottom: 10px;
+    }
+    .better_life_path h2{
+        margin-bottom: 15px;
+        font-size: 19px;
+    }
+    .world_map_col{
+        margin-top: 20px !important;
+    }
+    .better_life_path{
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+    .why_choose .benefit{
+        padding: 15px 7px 5px 14px;
+        margin-bottom: 11px;
+    }
+    .services{
+        padding-block: 30px;
+    }
+    .job_offers .row >* {
+        padding-right: calc(var(--bs-gutter-x) * .2);
+        padding-left: calc(var(--bs-gutter-x) * .2);
+    }
+    .offer_text h5 span{
+        font-size: 14px;
+        line-height:16.66px;
+    }
+    .text_title{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+    }
+    .work_adv{
+        margin-bottom: 27px;
+    }
+    .work_dev_head span{
+        font-size: 10px;
+        /* line-height: 22.8px; */
+        letter-spacing: 0.08em;
+    }
+    .work_dev_head{
+        gap: 7px;
+        margin-bottom: 15px;
+        padding: 7px 13px 9px;
+    }
+    .work_num{
+        font-size: 37px;
+    }
+    .work_adv .common_text{
+        font-size: 10px;
+        line-height: 22.8px;
+        padding-inline: unset;
+        text-align: center;
+    }
+    .svg_locat + p{
+        font-size: 12px;
+    }
+    .svg_locat{
+        margin-right: 7px;
+    }
+    .work_article p{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 16.8px;
+        letter-spacing: 0.08em;
+    }
+    .work_article .text_title{
+        font-size: 16px;
+        margin-bottom: 10px;
+        letter-spacing: 0.04em;
+    }
+    .svg_locat svg{
+        height: 16px;
+    }
+    /* .job_offers .container {
+        margin-top: 25px;
+        padding-block: 28px;
+        padding-inline: 25px;
+    } */
+    .work_Europe_jobs.job_offers h3{
+        font-size: 20px;
+        line-height: 29.04px;
+        letter-spacing: 0.055em;
+        margin-bottom: 26px;
+        padding-inline: unset;
+    }
+    .navbar-nav {
+        gap: 52px;
+        /* padding-top: 24px; */
+    }
+    .col-12:has( .world_map), .col-12:has( .world_map ){
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .portfolio{
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+    .portfolio .slick-arrow{
+        top: -40px;
+    }
+    .portfolio .slick-prev{
+        right: 45px;
+    }
+    .portfolio h2{
+        margin-bottom: 24px;
+        padding-left: 9px;
+    }
+    .portfolio .slick-slide {
+        margin: 0 9px;
+    }
+    .slide-item img{
+        &:first-child {
+            margin-bottom: 11px;
+        }
+    }
+    .WDNL_recruiting{
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+    .recruiting-slider .slick-slide{
+        margin: 0 7px;
+    }
+    .recruiting-slider{
+        margin-top: 20px;
+    }
+    .recruite-box{
+        min-height: 238px;
+    }
+    .recruite-box h5{
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+    .recruite-box p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .recruite-box .recruit-upper{
+        margin-bottom: 15px;
+    }
+    .recruite-box .icon_box{
+        width: 34.3px;
+        height: 34.3px;
+        margin-right: 8px;
+    }
+    .recruite-box img{
+        max-width: 18px;
+    }
+}
+@media (min-width: 576px) { 
+    .hero.main_hero, .candidates_hero{
+        height: 480px;
+        background-size: cover;
+    }
+    .contact_text h2{
+        line-height: 36.04px;
+    }
+    .best_partner_svg{
+        max-width: 767px;
+    }
+}
+@media (min-width: 768px) { 
+    .why_choose {
+        padding-block: 60px;
+    }
+    .partner_inner_img {
+        padding: 10px 0 10px 11px;
+        background-color: #fff;
+        bottom: -38px;
+        left: 93px;
+        width: fit-content;
+    }
+    .hero .social_links li a{
+        width: 49px;
+        height: 49px;
+    }
+    .hero .social_links li a svg {
+        width: unset;
+    }
+    .common_text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 37.62px;
+    }
+    .profile_cooperation {
+        padding-block: 126px;
+    }
+    .profile_part h5 {
+        margin-top: 12px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 30.62px;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .icon_box {
+        height: 65px;
+        min-width: 65px;
+        width: 65px;
+    }
+    .svg_container {
+        max-width: unset;
+    }
+    .profile_text h2 {
+        margin-bottom: 21px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 44.08px;
+    }
+    .location {
+        padding-top: 77px;
+        padding-bottom: 130px;
+    }
+    .location .location_text h2 {
+        margin-bottom: 30px;
+    }
+    .location_text p:not(:first-child) {
+        margin-bottom: 15px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .form-check-label {
+        margin-left: 18px;
+    }
+    .contact_text h2 {
+        margin-bottom: 32px;
+    }
+    footer{
+        padding-top: 39px;
+        padding-bottom: 32px;
+    }
+    .partner {
+        padding-top: 118px;
+        padding-bottom: 105px;
+    }
+    .employers_hero .hero_text p {
+        /* max-width: 560px; */
+        /* max-width: 583px; */
+        margin-bottom: 3px;
+        margin-top: 0;
+    }
+    .hero_text p {
+        padding-top: 5px;
+        padding-bottom: 17px;
+        font-size: 20px;
+        margin-inline: auto;
+        margin-bottom: unset;
+        margin-top: unset;
+        line-height: unset;
+    }
+    .employee_countries h3 {
+        margin-bottom: 49px;
+        max-width: 590px;
+        margin-inline: auto;
+    }
+    .contact_icon_box {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    .contact {
+        padding-top: 67px;
+        padding-bottom: 76px;
+    }
+    .employee_countries .country_div{
+        width: 178px;
+    }
+    .lg_btn {
+        min-width: 240px;
+    }
+    .our_job_text .common_text {
+        line-height: 32.4px;
+    }
+    .job_offers h3 {
+        margin-bottom: 45px;
+    }
+    .job_offers .row > * {
+        padding-right: 0;
+    }
+    .job_offers .main_btn {
+        margin-top: 40px;
+        padding-inline: 46px;
+        min-width: 254px;
+    }
+    .job_offers{
+        padding-top: 64px;
+        padding-bottom: 51px;
+    }
+    .better_life_path {
+        padding-block: 73px;
+    }
+    .better_life_path h2 {
+        margin-bottom: 21px;
+        max-width: 560px;
+    }
+    .endless_possibilities_text h2 {
+        margin-bottom: 12px;
+    }
+    .candidates_hero .hero_text h1 {
+        font-size: 43px;
+        font-weight: 900;
+        line-height: 53.84px;
+        letter-spacing: 0.08em;
+        margin-bottom: 35px;
+    }
+    .candidates_hero .hero_text h4 {
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 33.8px;
+        margin-bottom: 25px;
+    }
+    .candidates_hero .hero_text h5 {
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 23.79px;
+        margin-bottom: 35px;
+    }
+    .work_Europe.container-fluid{
+        padding-inline: 28px;
+        padding-top: 91px;
+        padding-bottom: 74px;
+    }
+    .work_box{
+        box-shadow: 0px 29px 40.2px 0px #00000012;
+        border-radius: 20px; 
+    }
+    .work_box{
+        padding: 42px 48px 18px 64px;
+    }
+    .work_article{
+        margin-top: 42px;
+        margin-bottom: 18px;
+    }
+    .work_article .text_title{
+        margin-bottom: 18px;
+    }
+    .offer_text h5 span {
+        font-size: 18px;
+        line-height: 21.41px;
+    }
+    .work_Europe .work_heading {
+        font-size: 32px;
+    }
+}
+@media (min-width: 992px) { 
+    .contact_offices .contact_office:first-child{
+        margin-top: -60px;
+        margin-bottom: 30px;
+    }
+    .representative_text{
+        padding-right: 57px;
+        max-width: 550px;
+    }
+    .work_text .text_title{
+        margin-bottom: 23px;
+    }
+    .svg_locat{
+        margin-right: 20px;
+    }
+    .svg_locat + p{
+        font-size: 24px;
+    }
+    .text_title{
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 63px;
+        letter-spacing: 0.04em;
+    }
+    .navbar-nav {
+        gap: 32px;
+        font-size: 14px;
+    }
+    .navbar-brand {
+        font-size: 36.04px;
+        line-height: 45.12px;
+    }
+    .hero_text h1 {
+        font-size: 46px;
+        line-height: 68.86px;
+    }
+    .hero.main_hero, .candidates_hero{
+        background-position: top center;
+        padding-top: 40px;
+        height: 100vh;
+        background-color: unset;
+    }
+    .partner_text p {
+        margin-top: 24px;
+    }
+    .partner {
+        padding-top: 118px;
+        padding-bottom: 105px;
+    }
+    .contact_text {
+        padding-left: 24px;
+    }
+    .world_map_col {
+        position: absolute;
+        right: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .cooperation_benefits h2 {
+        margin-bottom: 77px;
+    }
+    .cooperation_benefits .benefit {
+        padding-left: 18px;
+        padding-right: 18px;
+        gap: 16px;
+    }
+    .profile_text {
+        max-width: 531px;
+    }
+    .employee_countries .contact_form {
+        position: absolute;
+        margin-top: 21px;
+        margin-left: 30px;
+    }
+    .form-control{
+        font-size: 14px;
+    }
+    .partner_text {
+        max-width: 570px;
+        padding-left: 32px;
+    }
+    .employers_contact .contact_text {
+        padding-left: 30px;
+    }
+    .contact_text {
+        max-width: 606px;
+    }
+    .employer_map {
+        left: 0;
+        z-index: 2;
+    }
+    .employee_countries form{
+        position: relative;
+        z-index: 3;
+    }
+    .cooperation_benefits.employing_benefits .benefit {
+        min-height: 221px;
+        padding: 20px;
+    }
+    .cooperation_benefits.employing_benefits.ru_benefits .benefit {
+        min-height: 245px;
+    }
+    .employing_benefits .benefit p {
+        line-height: 24px;
+    }
+    .employee_countries {
+        padding-top: 80px;
+        margin-bottom: 162px;
+        padding-bottom: 81px;
+    }
+    .job_offers {
+        padding-inline: 100px;
+    }
+    .endless_possibilities {
+        padding-block: 39px;
+    }
+    .endless_possibilities .img-container {
+        margin-top: 35px;
+    }
+    .endless_possibilities_text {
+        padding-left: 24px;
+    }
+    .endless_possibilities_text p{
+        padding-right: 76px;
+    }
+    .services_text{
+        padding-right: 30px;
+    }
+    .location_text p {
+        max-width: 559px;
+    }
+    .location_text p:not(:first-child) {
+        margin-bottom: 15px;
+    }
+    .why_choose{
+        padding-top: 95px;
+        padding-bottom: 68px;
+    }
+    .why_choose h2 {
+        margin-bottom: 50px;
+    }
+    .services_text .main_btn{
+        width: 96%;
+    }
+    .services .img-container{
+        margin-left: auto;
+        max-width: 595px;
+    }
+    .why_choose .benefit {
+        min-height: 255px;
+    }
+    .partners_hero_img{
+        margin-top: 20px;
+    }
+    .job_add{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--main-color);
+        right: 15px;
+        bottom: 17px;
+    }
+    .job_add img{
+        width: 20px;
+    }
+    .summary_text h4{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28.55px;
+        letter-spacing: 0.08em;
+    }
+    .job_sum_img {
+        max-width: 200px;
+        margin-right: 15px;
+        /* height: 197px; */
+        width: 200px;
+    }
+    .svg_sum {
+        min-width: 30px;
+        margin-right: 10px;
+    }
+    .svg_sum img{
+        width: 20px;
+    }
+    .em_countries .country_div{
+        padding: 9px 15px;
+        /* min-width: 200px; */
+        border-radius: 10px;
+        margin-bottom: 24px;
+        gap: 14px;
+        width: fit-content;
+    }
+    .sum_item span{
+        font-size: 16px;
+    }
+}
+@media (min-width: 1200px) { 
+    .work_Europe .work_heading {
+        font-size: 49px;
+        font-weight: 700;
+        line-height: 61.35px;
+        margin-bottom: 53px;
+    }
+    header .container-fluid{
+        padding-left: 44px;
+        padding-right: 64px;
+        height: 72px;
+    }
+    .navbar-nav {
+        gap: 65px;
+        font-size: 16px;
+    }
+    .hero_text h1 {
+        font-size: 55px;
+    }
+    .hero .main_btn {
+        font-size: 16px;
+        min-width: 254px;
+    }
+    .hero.main_hero, .candidates_hero{
+        padding-top: 50px;
+    }
+    h2 {
+        font-size: 34px;
+        line-height: 45.08px;
+    }
+    .cooperation_benefits .benefit {
+        gap: 32px;
+        padding-left: 34px;
+        padding-right: 52px;
+        margin-bottom: 40px;
+    }
+    .contact_detail {
+        max-width: 323px;
+    }
+    .why_choose {
+        padding-inline: 135px;
+    }
+    .why_choose h2 {
+        margin-bottom: 79px;
+    }
+    .job_offers{
+        padding-inline: 140px;
+    }
+    .services_text {
+        padding-right: 66px;
+    }
+    .job_add{
+        width: 44px;
+        height: 44px;
+    }
+    .work_Europe.container-fluid{
+        padding-inline: 72px;
+    }
+}
+@media (min-width: 1400px) { 
+    .summary_text h4{
+        font-size: 24px;
+        letter-spacing: 0.08em;
+    }
+    .hero.main_hero, .candidates_hero{
+        background-position: top bottom;
+        padding-top: 91px;
+        height: calc(100vh + 72px);
+    }
+    .contact_text {
+        padding-left: unset;
+    }
+    .partner_text p{
+        pdding-right: 32px;
+    }
+    .employee_countries{
+        padding-top: 173px;
+    }
+    .employee_countries .country_div{
+        width: 195px;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37.56px;
+    }
+    .employee_countries .contact_form{
+        margin-right: 48px;
+    }
+    .form-control{
+        font-size: 16px;
+    }
+    .employers_contact .contact_text h2 {
+        font-size: 36px;
+        line-height: 52.27px;
+        letter-spacing: 0.88px;
+        margin-bottom: 50px;
+    }
+    .employee_countries form {
+        z-index: 1;
+    }
+    .why_choose{
+        padding-inline: 200px;
+    }
+    .job_offers{
+        padding-inline: 160px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 50.08px;  
+    }
+    .endless_possibilities{
+        padding-inline: 149px;
+    }
+    .work_dev_head span{
+        letter-spacing: 0.08em;
+    }
+    .job_sum_img {
+        max-width: 271px;
+        margin-right: 15px;
+        height: 197px;
+        width: 271px;
+    }
+    .job_add{
+        width: 55px;
+        height: 55px;
+    }
+    .em_countries{
+        padding-inline: 75px;
+    }
+    .em_countries .country_div{
+        min-width: 218px;
+    }
+    .contact_office{
+        padding: 33px 71px 38px 69px;
+        margin-top: -80px;
+    }
+    .cont_off_detail{
+        padding-left: 32px;
+    }
+    .cont_off_detail:not(:last-child){
+        margin-bottom: 49px;
+    }
+    .portfolio{
+        padding-inline: 210px;
+    }
+ }

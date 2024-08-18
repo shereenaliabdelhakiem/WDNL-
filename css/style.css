@@ -1245,6 +1245,9 @@ textarea.form-control {
         border-radius: 6px;
         margin-right: 6px;
     }
+    .cont_off_icon img{
+        width: 12px;
+    }
     .cont_off_detail .common_text{
         font-size: 14px;
     }

@@ -103,6 +103,7 @@ h2 span{
     text-align: center;
     padding: 14px 30px;
     border: 0;
+    text-transform: capitalize;
 }
 .main_btn:hover{
     background-color: var(--identity-color);
@@ -298,7 +299,7 @@ h4{
     padding-top: 25px;
     padding-bottom: 12px;
 }
-.location .location_text h2 {
+.location .location_text:not(.location_en_text) h2 {
     margin-bottom: 15px;
 }
 .location_text p:not(:first-child) {
@@ -332,6 +333,7 @@ h4{
 .benefit h5 {
     font-weight: 700;
     margin-bottom: 5px;
+    text-transform: capitalize;
 }
 .icon_box.circled_icon_container, .circled_icon_container {
     border-radius: 32.5px;
@@ -410,7 +412,6 @@ h4{
 }
 .contact_text {
     margin-bottom: 51px;
-    max-width: 606px;
 }
 .contact_form {
     background-color: var(--light-gray-color);
@@ -663,8 +664,12 @@ form label.sm_label {
     line-height: 18px;
     margin-bottom: 0 !important;
 }
-form label span {
+form label span, form label a {
     font-weight: 600;
+    color: var(--secondary_font);
+}
+form label a:hover{
+    color: var(--text-color);
 }
 .contact .contact_detail:not(:last-child) {
     margin-bottom: 30px;
@@ -768,7 +773,7 @@ h3 span {
 .services .form_btn {
     margin-top: 20px;
     width: fit-content;
-    margin-inline: auto;
+    /* margin-inline: auto; */
     padding-inline: 59.5px;
 }
 .main_btn {
@@ -782,11 +787,15 @@ h3 span {
     margin-bottom: 10px;
 }
 .partners_services{
-    padding-block: 45px;
+    /* padding-block: 45px; */
+    padding-top: 45px;
+    padding-bottom: 29px;
 }
 .partners_services_text ol{
-    max-width: 900px;
-    margin-top: 19px;
+    /* max-width: 900px; */
+    max-width: 943px;
+    /* margin-top: 19px; */
+    margin-top: 6px;
 }
 .partners_services_text ol li.common_text{
     margin-bottom: 15px;
@@ -815,7 +824,7 @@ h3 span {
 }
 .em_countries .country_div h5{
     color: var(--main-color);
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.055em;
     font-size: 18px;
 }
@@ -907,6 +916,9 @@ h3 span {
     border-radius: 19px;
     box-shadow: 0px 29px 40.2px 0px #00000012;
     background-color: #fff;
+}
+.contact_office .common_text{
+    color: #000000;
 }
 .contact_office h4{
     font-size: 25px;
@@ -1169,10 +1181,13 @@ textarea.form-control {
     }
     .cooperation_benefits.employing_benefits .benefit {
         min-height: 226px;
-        padding: 15px 10px 14px 14px;
+        padding: 15px 10px 14px 10px;
+    }
+    .cooperation_benefits.ru_benefits .benefit{
+        min-height: 266px;
     }
     .benefit_upper{
-        gap: 10px;
+        gap: 6px;
         margin-bottom: 13px;
     }
     .employee_countries {
@@ -1415,8 +1430,8 @@ textarea.form-control {
         padding-top: 34px;
     }
     .cooperation_benefits.employing_benefits .row .col-6{
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
     .cooperation_benefits.employing_benefits {
         padding-top: 50px;
@@ -1459,6 +1474,7 @@ textarea.form-control {
     .country_div h5{
         font-size: 12px;
         font-weight: 600;
+        text-transform: capitalize;
         line-height: 20.04px;
     }
     .employer_map{
@@ -1485,8 +1501,8 @@ textarea.form-control {
         margin-bottom: 10px;
     }
     .alt_btn{
-        padding: 8px 22px;
-        font-size: 6px;
+        padding: 12px 32px;
+        font-size: 10px;
         line-height: 7.03px;
         letter-spacing: 0.11em;
         border-radius: 28px;
@@ -1779,10 +1795,10 @@ textarea.form-control {
         line-height: 44.08px;
     }
     .location {
-        padding-top: 77px;
-        padding-bottom: 130px;
+        padding-top: 52px;
+        padding-bottom: 91px;
     }
-    .location .location_text h2 {
+    .location .location_text:not(.location_en_text) h2 {
         margin-bottom: 30px;
     }
     .location_text p:not(:first-child) {
@@ -1806,8 +1822,6 @@ textarea.form-control {
         padding-bottom: 105px;
     }
     .employers_hero .hero_text p {
-        /* max-width: 560px; */
-        /* max-width: 583px; */
         margin-bottom: 3px;
         margin-top: 0;
     }
@@ -1920,7 +1934,7 @@ textarea.form-control {
         margin-top: -60px;
         margin-bottom: 30px;
     }
-    .representative_text{
+    .representative_text:not(.rep-ru-txt){
         padding-right: 57px;
         max-width: 550px;
     }
@@ -1964,8 +1978,8 @@ textarea.form-control {
         padding-top: 118px;
         padding-bottom: 105px;
     }
-    .contact_text {
-        padding-left: 24px;
+    .contact_text.con_tx_ru {
+        padding-left: 26px;
     }
     .world_map_col {
         position: absolute;
@@ -1993,13 +2007,13 @@ textarea.form-control {
         font-size: 14px;
     }
     .partner_text {
-        max-width: 570px;
+        max-width: 526px;
         padding-left: 32px;
     }
-    .employers_contact .contact_text {
+    /* .employers_contact .contact_text {
         padding-left: 30px;
-    }
-    .contact_text {
+    } */
+    .contact_text:not(.con_tx_ru){
         max-width: 606px;
     }
     .employer_map {
@@ -2031,18 +2045,18 @@ textarea.form-control {
     .endless_possibilities {
         padding-block: 39px;
     }
-    .endless_possibilities .img-container {
+    /* .endless_possibilities .img-container {
         margin-top: 35px;
-    }
+    } */
     .endless_possibilities_text {
         padding-left: 24px;
     }
     .endless_possibilities_text p{
         padding-right: 76px;
     }
-    .services_text{
+    /* .services_text{
         padding-right: 30px;
-    }
+    } */
     .location_text p {
         max-width: 559px;
     }
@@ -2057,7 +2071,7 @@ textarea.form-control {
         margin-bottom: 50px;
     }
     .services_text .main_btn{
-        width: 96%;
+        width: 100%;
     }
     .services .img-container{
         margin-left: auto;
@@ -2066,6 +2080,9 @@ textarea.form-control {
     .why_choose .benefit {
         min-height: 255px;
     }
+    /* .why_choose.why_choose_ru .benefit{
+        min-height: 290px;
+    } */
     .partners_hero_img{
         margin-top: 20px;
     }
@@ -2159,9 +2176,12 @@ textarea.form-control {
     .job_offers{
         padding-inline: 140px;
     }
-    .services_text {
-        padding-right: 66px;
-    }
+    /* .services_text {
+        padding-right: 53px;
+    } */
+     .pl_srv_txt .main_btn{
+        width: 96%;
+     }
     .job_add{
         width: 44px;
         height: 44px;
@@ -2180,12 +2200,12 @@ textarea.form-control {
         padding-top: 91px;
         height: calc(100vh + 72px);
     }
-    .contact_text {
+    /* .contact_text {
         padding-left: unset;
-    }
-    .partner_text p{
+    } */
+    /* .partner_text p{
         pdding-right: 32px;
-    }
+    } */
     .employee_countries{
         padding-top: 173px;
     }
@@ -2212,9 +2232,9 @@ textarea.form-control {
     .employee_countries form {
         z-index: 1;
     }
-    .why_choose{
+    /* .why_choose{
         padding-inline: 200px;
-    }
+    } */
     .job_offers{
         padding-inline: 160px;
     }
@@ -2256,5 +2276,14 @@ textarea.form-control {
     }
     .portfolio{
         padding-inline: 210px;
+    }
+    .best_ru .container{
+        margin-left:0;
+    }
+    .best_ru .container .best_partner_text{
+        padding-left: 174px;
+    }
+    .contact_text.pl_con{
+        padding-right: 81px;
     }
 }

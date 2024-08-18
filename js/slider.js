@@ -71,8 +71,8 @@ $('.true_dir').slick({
   autoplay: true,
   centerMode: true,
   centerPadding: '60px',
-  autoplaySpeed:900,
-  speed: 900,
+  autoplaySpeed:2500,
+  speed: 2500,
   responsive: [
     {
       breakpoint: 1280,
@@ -89,6 +89,8 @@ $('.true_dir').slick({
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '20px',
+        autoplaySpeed:500,
+        speed: 3500,
       }
     },
     {
@@ -98,6 +100,8 @@ $('.true_dir').slick({
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '20px',
+        autoplaySpeed:500,
+        speed: 3500,
       }
     }
  ]
@@ -110,8 +114,8 @@ $('.reverse_dir').slick({
   autoplay: true,
   centerMode: true,
   centerPadding: '60px',
-  autoplaySpeed:900,
-  speed: 900,
+  autoplaySpeed:2500,
+  speed: 2500,
   responsive: [
     {
       breakpoint: 1280,
@@ -128,6 +132,8 @@ $('.reverse_dir').slick({
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '20px',
+        autoplaySpeed:500,
+        speed: 3500,
       }
     },
     {
@@ -137,6 +143,8 @@ $('.reverse_dir').slick({
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '20px',
+        autoplaySpeed:500,
+        speed: 3500,
       }
     }
  ]

@@ -1502,7 +1502,7 @@ textarea.form-control {
     }
     .alt_btn{
         padding: 12px 32px;
-        font-size: 10px;
+        font-size: 13px;
         line-height: 7.03px;
         letter-spacing: 0.11em;
         border-radius: 28px;
@@ -1696,6 +1696,7 @@ textarea.form-control {
         margin: 0 9px;
     }
     .slide-item img{
+        display: block;
         &:first-child {
             margin-bottom: 11px;
         }

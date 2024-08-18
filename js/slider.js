@@ -89,8 +89,8 @@ $('.true_dir').slick({
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '20px',
-        autoplaySpeed:500,
-        speed: 2000,
+        autoplaySpeed:3000,
+        speed: 3000,
       }
     },
     {
@@ -100,8 +100,8 @@ $('.true_dir').slick({
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '20px',
-        autoplaySpeed:500,
-        speed: 2000,
+        autoplaySpeed:3000,
+        speed: 3000,
       }
     }
  ]
@@ -132,8 +132,8 @@ $('.reverse_dir').slick({
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '20px',
-        autoplaySpeed:500,
-        speed: 2000,
+        autoplaySpeed:3000,
+        speed: 3000,
       }
     },
     {
@@ -143,8 +143,8 @@ $('.reverse_dir').slick({
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '20px',
-        autoplaySpeed:500,
-        speed: 2000,
+        autoplaySpeed:3000,
+        speed: 3000,
       }
     }
  ]

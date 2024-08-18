@@ -90,7 +90,7 @@ $('.true_dir').slick({
         centerMode: true,
         centerPadding: '20px',
         autoplaySpeed:500,
-        speed: 3500,
+        speed: 2000,
       }
     },
     {
@@ -101,7 +101,7 @@ $('.true_dir').slick({
         centerMode: true,
         centerPadding: '20px',
         autoplaySpeed:500,
-        speed: 3500,
+        speed: 2000,
       }
     }
  ]
@@ -133,7 +133,7 @@ $('.reverse_dir').slick({
         centerMode: true,
         centerPadding: '20px',
         autoplaySpeed:500,
-        speed: 3500,
+        speed: 2000,
       }
     },
     {
@@ -144,7 +144,7 @@ $('.reverse_dir').slick({
         centerMode: true,
         centerPadding: '20px',
         autoplaySpeed:500,
-        speed: 3500,
+        speed: 2000,
       }
     }
  ]

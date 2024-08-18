@@ -1110,8 +1110,14 @@ textarea.form-control {
     font-weight: 300;
     line-height: 19.2px;
     font-family: Roboto;
-    color: #0E2237;
+    color: rgba(14, 34, 55, 0.9);
     letter-spacing: 0.04em;
+}
+.terms-form p button{
+    font-weight: 700;
+    color: rgba(14, 34, 55, 0.9);
+    background-color: none;
+    border: none;
 }
 @media(max-width: 991px){
     .em_countries{

@@ -1102,6 +1102,17 @@ h3 span {
 textarea.form-control {
     height: 100px;
 }
+.terms-form label + p{
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+.terms-form p, .terms-form form label{
+    font-weight: 300;
+    line-height: 19.2px;
+    font-family: Roboto;
+    color: #0E2237;
+    letter-spacing: 0.04em;
+}
 @media(max-width: 991px){
     .em_countries{
         padding-inline: 15px;
@@ -1764,6 +1775,9 @@ textarea.form-control {
     }
     .recruite-box img{
         max-width: 18px;
+    }
+    .terms-form .form-check p{
+        font-size: 12px;
     }
 }
 @media (min-width: 576px) { 

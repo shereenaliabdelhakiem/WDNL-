@@ -772,8 +772,8 @@ h3 span {
 }
 .services .form_btn {
     margin-top: 20px;
+    display: block;
     width: fit-content;
-    /* margin-inline: auto; */
     padding-inline: 59.5px;
 }
 .main_btn {
@@ -1562,6 +1562,9 @@ textarea.form-control {
         font-weight: 300;
         line-height: 11.9px;
         letter-spacing: 0.08em;
+    }
+    .services .form_btn{
+        margin-inline: auto;
     }
     .candidates_job_offers .job_offer{
         padding: 19px 8px;

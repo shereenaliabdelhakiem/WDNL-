@@ -1136,7 +1136,6 @@ textarea.form-control {
         margin-top: 41px;
     }
     .navbar-nav {
-        gap: 18px;
         padding-top: 24px;
     }
     .navbar-collapse {
@@ -1273,6 +1272,12 @@ textarea.form-control {
     header .dropdown-menu{
         .dropdown-item {
             padding: 10px 16px 10px 10px;
+        }
+    }
+    .navbar-nav {
+        height: 100%;
+        li{
+            flex-grow: 1;
         }
     }
 }
@@ -1675,10 +1680,6 @@ textarea.form-control {
         letter-spacing: 0.055em;
         margin-bottom: 26px;
         padding-inline: unset;
-    }
-    .navbar-nav {
-        gap: 52px;
-        /* padding-top: 24px; */
     }
     .col-12:has( .world_map), .col-12:has( .world_map ){
         padding-right: 0;

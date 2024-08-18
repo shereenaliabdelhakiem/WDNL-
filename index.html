@@ -3,9 +3,664 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Work Department NL oferuje usługi rekrutacji i pośrednictwa pracy, a także outsourcing HR.">
+    <!--Roboto & Open sans fonts CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Bootstrap 5 CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Swipper-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="http://akamai-ssl.burton.com/2017/fonts/dinnext/MyFontsWebfontsKit.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <!--Custom Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Website Logo & Title-->
+    <link rel="icon" href="img/WDNL.svg" type="image/icon type">
+    <title>O nas - Work Department NL</title>
 </head>
 <body>
-    <a href="about-us-pl.html">Follow This link</a>
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+              <a class="navbar-brand" href="index.html">
+                WDNL
+              </a>
+              <button class="navbar-toggler border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="btn__icon header__toggleIconMenu" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1 1.3C19.1 0.955214 18.963 0.624559 18.7192 0.380757C18.4754 0.136968 18.1448 0 17.8 0H2.2C1.85524 0 1.52452 0.136968 1.28078 0.380757C1.03703 0.624559 0.900005 0.955214 0.900005 1.3C0.900005 1.64479 1.03703 1.97544 1.28078 2.21924C1.52452 2.46303 1.85524 2.6 2.2 2.6H17.8C18.1448 2.6 18.4754 2.46303 18.7192 2.21924C18.963 1.97544 19.1 1.64479 19.1 1.3ZM19.1 7.8C19.1 7.45521 18.963 7.12456 18.7192 6.88076C18.4754 6.63697 18.1448 6.5 17.8 6.5H10C9.65525 6.5 9.32452 6.63697 9.08078 6.88076C8.83703 7.12456 8.70001 7.45521 8.70001 7.8C8.70001 8.14476 8.83703 8.47548 9.08078 8.71923C9.32452 8.96298 9.65525 9.1 10 9.1H17.8C18.1448 9.1 18.4754 8.96298 18.7192 8.71923C18.963 8.47548 19.1 8.14476 19.1 7.8ZM19.1 14.3C19.1 13.9552 18.963 13.6245 18.7192 13.3808C18.4754 13.137 18.1448 13 17.8 13H2.2C1.85524 13 1.52452 13.137 1.28078 13.3808C1.03703 13.6245 0.900005 13.9552 0.900005 14.3C0.900005 14.6448 1.03703 14.9755 1.28078 15.2192C1.52452 15.463 1.85524 15.6 2.2 15.6H17.8C18.1448 15.6 18.4754 15.463 18.7192 15.2192C18.963 14.9755 19.1 14.6448 19.1 14.3Z" fill="black"/>
+                </svg>
+                <svg class="btn__icon header__toggleIconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7123 16.7729C16.0052 17.0658 16.4801 17.0658 16.7729 16.7729C17.0658 16.48 17.0658 16.0052 16.7729 15.7123L13.0607 12L16.7729 8.2877C17.0658 7.99481 17.0658 7.51993 16.7729 7.22704C16.48 6.93415 16.0052 6.93415 15.7123 7.22704L12 10.9393L8.28766 7.22699C7.99477 6.9341 7.5199 6.9341 7.227 7.22699C6.93411 7.51989 6.93411 7.99476 7.227 8.28765L10.9393 12L7.22699 15.7123C6.9341 16.0052 6.9341 16.4801 7.22699 16.773C7.51989 17.0659 7.99476 17.0659 8.28765 16.773L12 13.0606L15.7123 16.7729Z" fill="black"></path>
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">O nas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="employers-pl.html">Dla pracodawców</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="candidates-pl.html">Dla kandydatów</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="partners-pl.html">Dla Partnerów</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact-pl.html">Kontakt</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span> <img src="img/country_flag.png" class="img-fluid country_flag" alt="country flag"></span> <span>EN</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="about-us-ru.html"><span><img src="img/ru-flag.svg" class="img-fluid country_flag" alt="country flag"></span> <span>RU</span></a></li>
+                      <li><a class="dropdown-item" href="about-us.html"><span> <img src="img/country_flag.png" class="img-fluid country_flag" alt="country flag"></span> <span>EN</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+    <!--hero-->
+    <section class="hero main_hero position-relative">
+        <div class="hero_text container">
+            <h1 class="d-none d-lg-block"><span>Agencja Pracy</span> Work Department NL</h1>
+            <h1 class="d-lg-none">Work Department NL<span> Poznaj nas</h1>
+            <p class="fz_sm_14 d-none d-lg-block">Work Department NL oferuje rekrutację oraz profesjonalne usługi kierowania osób do pracy, a także outsourcing HR.</p>
+            <p class="d-lg-none">Jesteśmy profesjonalnym zespołem świadczącym usługi leasingu pracowniczego.</p>
+            <a href="#contact" class="main_btn site_btn lg_btn mx-auto d-none d-lg-block">Kontakt</a>
+            <a href="#contact" class="main_btn site_btn lg_btn mx-auto d-lg-none">Zamów konsultację</a>
+        </div>
+        <ul class="d-flex align-items-center justify-content-center social_links">
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=48793049827" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M0 23.2417L1.63418 17.2724C0.626435 15.5292 0.0998665 13.5455 0.0998665 11.5164C0.0998665 5.16582 5.27023 0 11.6208 0C14.7031 0 17.5947 1.20294 19.769 3.3773C21.9434 5.55621 23.1418 8.4478 23.1418 11.5255C23.1373 17.8761 17.9714 23.0419 11.6208 23.0419H11.6163C9.68705 23.0419 7.79413 22.5562 6.11001 21.6393L0 23.2417ZM6.39146 19.5557L6.74099 19.7645C8.21175 20.6361 9.89586 21.0991 11.6163 21.0991H11.6208C16.9001 21.0991 21.1944 16.8048 21.1944 11.5255C21.1944 8.96983 20.2003 6.56395 18.3936 4.75274C16.5869 2.94152 14.181 1.9474 11.6254 1.9474C6.34152 1.9474 2.04726 6.24166 2.04726 11.521C2.04726 13.3276 2.55114 15.0889 3.50895 16.6142L3.73592 16.9773L2.76903 20.509L6.39146 19.5557Z" fill="#022140"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29074 7.49293C9.12312 7.13818 8.94852 7.13148 8.79139 7.12479C8.66218 7.1181 8.51552 7.12144 8.36536 7.12144C8.2187 7.12144 7.97775 7.17499 7.77522 7.38584C7.57268 7.59668 7 8.11209 7 9.15628C7 10.2005 7.79268 11.2112 7.90442 11.3518C8.01617 11.4923 9.4374 13.7045 11.6862 14.5546C13.5579 15.2608 13.9386 15.1202 14.3436 15.0868C14.7487 15.0533 15.6531 14.5747 15.8382 14.0794C16.0233 13.5841 16.0233 13.159 15.9674 13.072C15.9115 12.985 15.7649 12.9314 15.5414 12.8243C15.3214 12.7172 14.2319 12.2052 14.0294 12.1349C13.8268 12.0646 13.6802 12.0278 13.53 12.242C13.3833 12.4529 12.9573 12.9314 12.8281 13.072C12.6989 13.2126 12.5697 13.2326 12.3497 13.1256C12.1297 13.0185 11.4139 12.7942 10.5688 12.0713C9.90882 11.5091 9.46534 10.8129 9.33613 10.6021C9.20693 10.3912 9.32217 10.2741 9.43391 10.1704C9.53168 10.0766 9.6539 9.92269 9.76565 9.79886C9.87739 9.67503 9.91231 9.58801 9.98564 9.4441C10.059 9.30354 10.0241 9.17971 9.96818 9.07261C9.91929 8.96217 9.48978 7.91463 9.29074 7.49293Z" fill="#022140"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/wdnl-pl/about/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" x="0" y="0" viewBox="0 0 100 100" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M90 90V60.7c0-14.4-3.1-25.4-19.9-25.4-8.1 0-13.5 4.4-15.7 8.6h-.2v-7.3H38.3V90h16.6V63.5c0-7 1.3-13.7 9.9-13.7 8.5 0 8.6 7.9 8.6 14.1v26H90zM11.3 36.6h16.6V90H11.3zM19.6 10c-5.3 0-9.6 4.3-9.6 9.6s4.3 9.7 9.6 9.7 9.6-4.4 9.6-9.7-4.3-9.6-9.6-9.6z" fill="#022140" opacity="1" data-original="#000000" class=""></path></g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/wdnl.pl/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <g clip-path="url(#clip0_2_712)">
+                        <path d="M11 1.98086C13.9391 1.98086 14.2871 1.99375 15.443 2.04531C16.5172 2.09258 17.0973 2.27305 17.484 2.42344C17.9953 2.62109 18.3648 2.86172 18.7473 3.24414C19.134 3.63086 19.3703 3.99609 19.568 4.50742C19.7184 4.89414 19.8988 5.47852 19.9461 6.54844C19.9977 7.70859 20.0105 8.05664 20.0105 10.9914C20.0105 13.9305 19.9977 14.2785 19.9461 15.4344C19.8988 16.5086 19.7184 17.0887 19.568 17.4754C19.3703 17.9867 19.1297 18.3563 18.7473 18.7387C18.3605 19.1254 17.9953 19.3617 17.484 19.5594C17.0973 19.7098 16.5129 19.8902 15.443 19.9375C14.2828 19.9891 13.9348 20.002 11 20.002C8.06094 20.002 7.71289 19.9891 6.55703 19.9375C5.48281 19.8902 4.90273 19.7098 4.51602 19.5594C4.00469 19.3617 3.63516 19.1211 3.25273 18.7387C2.86602 18.352 2.62969 17.9867 2.43203 17.4754C2.28164 17.0887 2.10117 16.5043 2.05391 15.4344C2.00234 14.2742 1.98945 13.9262 1.98945 10.9914C1.98945 8.05234 2.00234 7.7043 2.05391 6.54844C2.10117 5.47422 2.28164 4.89414 2.43203 4.50742C2.62969 3.99609 2.87031 3.62656 3.25273 3.24414C3.63945 2.85742 4.00469 2.62109 4.51602 2.42344C4.90273 2.27305 5.48711 2.09258 6.55703 2.04531C7.71289 1.99375 8.06094 1.98086 11 1.98086ZM11 0C8.01367 0 7.63984 0.0128906 6.4668 0.0644531C5.29805 0.116016 4.49453 0.305078 3.79844 0.575781C3.07227 0.859375 2.45781 1.2332 1.84766 1.84766C1.2332 2.45781 0.859375 3.07227 0.575781 3.79414C0.305078 4.49453 0.116016 5.29375 0.0644531 6.4625C0.0128906 7.63984 0 8.01367 0 11C0 13.9863 0.0128906 14.3602 0.0644531 15.5332C0.116016 16.702 0.305078 17.5055 0.575781 18.2016C0.859375 18.9277 1.2332 19.5422 1.84766 20.1523C2.45781 20.7625 3.07227 21.1406 3.79414 21.4199C4.49453 21.6906 5.29375 21.8797 6.4625 21.9312C7.63555 21.9828 8.00937 21.9957 10.9957 21.9957C13.982 21.9957 14.3559 21.9828 15.5289 21.9312C16.6977 21.8797 17.5012 21.6906 18.1973 21.4199C18.9191 21.1406 19.5336 20.7625 20.1437 20.1523C20.7539 19.5422 21.132 18.9277 21.4113 18.2059C21.682 17.5055 21.8711 16.7063 21.9227 15.5375C21.9742 14.3645 21.9871 13.9906 21.9871 11.0043C21.9871 8.01797 21.9742 7.64414 21.9227 6.47109C21.8711 5.30234 21.682 4.49883 21.4113 3.80273C21.1406 3.07227 20.7668 2.45781 20.1523 1.84766C19.5422 1.2375 18.9277 0.859375 18.2059 0.580078C17.5055 0.309375 16.7062 0.120313 15.5375 0.06875C14.3602 0.0128906 13.9863 0 11 0Z" fill="#022140"></path>
+                        <path d="M11 5.34961C7.88047 5.34961 5.34961 7.88047 5.34961 11C5.34961 14.1195 7.88047 16.6504 11 16.6504C14.1195 16.6504 16.6504 14.1195 16.6504 11C16.6504 7.88047 14.1195 5.34961 11 5.34961ZM11 14.6652C8.97617 14.6652 7.33477 13.0238 7.33477 11C7.33477 8.97617 8.97617 7.33477 11 7.33477C13.0238 7.33477 14.6652 8.97617 14.6652 11C14.6652 13.0238 13.0238 14.6652 11 14.6652Z" fill="#022140"></path>
+                        <path d="M18.193 5.12615C18.193 5.85662 17.6 6.44529 16.8738 6.44529C16.1434 6.44529 15.5547 5.85232 15.5547 5.12615C15.5547 4.39568 16.1477 3.80701 16.8738 3.80701C17.6 3.80701 18.193 4.39998 18.193 5.12615Z" fill="#022140"></path>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_712">
+                        <rect width="22" height="22" fill="#022140"></rect>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/WDNLpl/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17" fill="none">
+                        <path d="M8.39385 9.43359L8.85938 6.39844H5.94727V4.42969C5.94727 3.59933 6.35414 2.78906 7.65844 2.78906H8.98242V0.205078C8.98242 0.205078 7.78087 0 6.63202 0C4.23363 0 2.66602 1.45359 2.66602 4.08516V6.39844H0V9.43359H2.66602V16.7709C3.75315 16.941 4.86013 16.941 5.94727 16.7709V9.43359H8.39385Z" fill="#022140"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!--partner-->
+    <section class="partner container">
+        <div class="row align-items-lg-center">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 partner_imgs">
+                <div class="img_container position-relative text-center text-lg-start">
+                    <img src="img/about-shaking.png" class="img-fluid partner_lg_img" alt="partner shaking">
+                    <div class="partner_inner_img position-absolute">
+                        <img src="img/about_shaking_sm.webp" class="img-fluid" alt="partner shaking">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+                <div class="partner_text text-center text-lg-start">
+                    <h2>Work Department NL <span>to solidny i odpowiedzialny partner biznesowy</span></h2>
+                    <p class="common_text">Work Department NL to agencja zatrudnienia, która świadczy usługi w zakresie pracy tymczasowej, outsourcingu i rekrutacji. Pomagamy stawiać pierwsze kroki wkraczającym na krętą ścieżkę kariery, a także wspieramy naszych klientów w pozyskiwaniu pracowników.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--location-->
+    <section class="location bg_aqua_light_opacity">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-12 col-lg-6 col-xl-5">
+                    <div class="location_text">
+                        <h2>Nasi rekruterzy <span>znajdują się w wielu krajach Azji i</span> Afryki</h2>
+                        <p class="common_text">Jesteśmy jedyną agencją w Europie, która ma swoje przedstawicielstwo w krajach Azji i Afryki.</p>
+                        <p class="common_text">Zapewniamy kompleksową obsługę przedsiębiorstw w zakresie uzupełniania braków kadrowych. Zespół naszych ekspertów specjalizuje się w zatrudnianiu obcokrajowców, głównie z Azji i Afryki.</p>
+                        <p class="common_text">Każdą nową współpracę traktujemy poważnie, dlatego dokładnie sprawdzamy firmy naszych partnerów. Analizujemy także wszystkie dokumenty przyszłych pracowników i przeprowadzamy testy ich kwalifikacji.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-7 world_map_col">
+                    <div class="world_map">
+                        <!-- <img src="img/world_map_col.svg" class="img-fluid" alt="world map"> -->
+                        <img src="img/world-wide-map.png" class="img-fluid" alt="world map">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--cooperation_benefits-->
+    <section class="cooperation_benefits">
+        <div class="container">
+            <h2 class="text-center"><span>Współpraca z </span>Work Department <span>NL to:</span></h2>
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="benefit bg_aqua_light d-flex flex-column flex-md-row align-items-md-center position-relative">
+                        <div class="circled_icon_container icon_box">
+                            <div class="benefit_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="32" height="38" viewBox="0 0 32 38" fill="none">
+                                    <g filter="url(#filter0_d_2_542)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0586 9.72136C23.0586 13.6374 19.9187 16.7774 15.9999 16.7774C12.0824 16.7774 8.94127 13.6374 8.94127 9.72136C8.94127 5.80532 12.0824 2.66663 15.9999 2.66663C19.9187 2.66663 23.0586 5.80532 23.0586 9.72136ZM15.9999 29.3333C10.2164 29.3333 5.33325 28.3933 5.33325 24.7666C5.33325 21.1385 10.2471 20.2319 15.9999 20.2319C21.7848 20.2319 26.6666 21.1719 26.6666 24.7986C26.6666 28.4266 21.7527 29.3333 15.9999 29.3333Z" fill="#fff"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_2_542" x="-4" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_542"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_542" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="benefit_text">
+                            <h5>Indywidualne podejście</h5>
+                            <p>Każdą sprawę traktujemy odrębnie</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_545" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_545)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.205 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5379 247.134 64.4177 189.609C56.2828 143.368 218.746 199.983 244.209 62.2689Z" fill="#022140"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="#022140"/>
+                            </g>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container_hover" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_533" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_533)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.204 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5378 247.134 64.4176 189.609C56.2827 143.368 218.746 199.983 244.209 62.2689Z" fill="white"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="white"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="benefit bg_aqua_light d-flex flex-column flex-md-row align-items-md-center position-relative">
+                        <div class="circled_icon_container icon_box">
+                            <div class="benefit_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="34" height="40" viewBox="0 0 34 40" fill="none">
+                                    <g filter="url(#filter0_d_2_554)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6148 31.0444C16.7717 31.1264 16.9471 31.168 17.1226 31.1666C17.298 31.1653 17.472 31.1222 17.6303 31.0388L22.6848 28.3369C24.1181 27.5728 25.2406 26.7185 26.1163 25.7238C28.0203 23.5567 29.06 20.7908 29.0414 17.9388L28.9815 8.53118C28.9758 7.44762 28.2641 6.48074 27.2116 6.12927L17.8086 2.97442C17.2424 2.78272 16.622 2.78688 16.0658 2.98415L6.69839 6.25152C5.65155 6.61688 4.9527 7.5907 4.95841 8.67566L5.01831 18.0763C5.03685 20.9325 6.11221 23.6859 8.04758 25.8308C8.93184 26.8115 10.0642 27.6534 11.5133 28.4049L16.6148 31.0444ZM15.2768 19.9877C15.4879 20.1905 15.7617 20.2905 16.0355 20.2878C16.3094 20.2864 16.5818 20.1836 16.79 19.978L22.3137 14.5323C22.7287 14.1225 22.7245 13.4641 22.3052 13.0598C21.8844 12.6555 21.207 12.6583 20.7919 13.0681L16.0198 17.7719L14.0659 15.8937C13.6452 15.4895 12.9692 15.4937 12.5527 15.9035C12.1377 16.3133 12.142 16.9718 12.5627 17.376L15.2768 19.9877Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_2_554" x="-4" y="0" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_554"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_554" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="benefit_text">
+                            <h5>Rzetelność</h5>
+                            <p>Jesteśmy wiarygodnym i doświadczonym partnerem</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_545" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_545)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.205 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5379 247.134 64.4177 189.609C56.2828 143.368 218.746 199.983 244.209 62.2689Z" fill="#022140"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="#022140"/>
+                            </g>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container_hover" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_533" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_533)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.204 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5378 247.134 64.4176 189.609C56.2827 143.368 218.746 199.983 244.209 62.2689Z" fill="white"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="white"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="benefit bg_aqua_light d-flex flex-column flex-md-row align-items-md-center position-relative">
+                        <div class="circled_icon_container icon_box">
+                            <div class="benefit_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="36" height="38" viewBox="0 0 36 38" fill="none">
+                                    <g filter="url(#filter0_d_2_565)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2724 4.69193C15.3786 4.69193 14.6183 5.31303 14.4048 6.15015H21.5818C21.3683 5.31303 20.6079 4.69193 19.7141 4.69193H16.2724ZM23.6094 6.15015H26.2507C29.0521 6.15015 31.3333 8.459 31.3333 11.2944C31.3333 11.2944 31.2533 12.4948 31.2266 14.1663C31.2239 14.2986 31.1599 14.4283 31.0545 14.5066C30.4128 14.9805 29.8259 15.372 29.7725 15.3991C27.5581 16.8843 24.9848 17.9293 22.2434 18.4492C22.0647 18.4843 21.8886 18.3911 21.7979 18.2318C21.0295 16.9005 19.5941 16.0336 17.9933 16.0336C16.4032 16.0336 14.9544 16.891 14.1634 18.2237C14.0713 18.3803 13.8979 18.4708 13.7205 18.437C11.0018 17.9158 8.42851 16.8721 6.22741 15.4126L4.94677 14.5214C4.84005 14.4539 4.77335 14.3324 4.77335 14.1974C4.73333 13.5088 4.66663 11.2944 4.66663 11.2944C4.66663 8.459 6.94777 6.15015 9.74917 6.15015H12.3771C12.6306 4.19236 14.2714 2.66663 16.2724 2.66663H19.7141C21.7151 2.66663 23.356 4.19236 23.6094 6.15015ZM30.8797 17.0869L30.8264 17.1139C28.1317 18.9232 24.8901 20.1249 21.4884 20.6245C21.0081 20.692 20.5279 20.3814 20.3945 19.8954C20.101 18.7882 19.1539 18.0591 18.02 18.0591H18.0066H17.9799C16.846 18.0591 15.8989 18.7882 15.6054 19.8954C15.472 20.3814 14.9918 20.692 14.5115 20.6245C11.1098 20.1249 7.86823 18.9232 5.17355 17.1139C5.16021 17.1004 5.02681 17.0194 4.92009 17.0869C4.80003 17.1545 4.80003 17.3165 4.80003 17.3165L4.89341 24.2025C4.89341 27.0379 7.16121 29.3333 9.96261 29.3333H26.024C28.8254 29.3333 31.0932 27.0379 31.0932 24.2025L31.1999 17.3165C31.1999 17.3165 31.1999 17.1545 31.0798 17.0869C31.0131 17.0464 30.9331 17.0599 30.8797 17.0869ZM18.9938 22.7443C18.9938 23.3114 18.5536 23.7569 17.9933 23.7569C17.4463 23.7569 16.9928 23.3114 16.9928 22.7443V21.0025C16.9928 20.4489 17.4463 19.9899 17.9933 19.9899C18.5536 19.9899 18.9938 20.4489 18.9938 21.0025V22.7443Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_2_565" x="-2" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_565"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_565" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="benefit_text">
+                            <h5>Kompleksowa oferta</h5>
+                            <p>Obsługujemy migrantów, inwestorów zagranicznych oraz pracodawców</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_545" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_545)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.205 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5379 247.134 64.4177 189.609C56.2828 143.368 218.746 199.983 244.209 62.2689Z" fill="#022140"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="#022140"/>
+                            </g>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container_hover" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_533" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_533)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.204 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5378 247.134 64.4176 189.609C56.2827 143.368 218.746 199.983 244.209 62.2689Z" fill="white"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="white"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="benefit bg_aqua_light d-flex flex-column flex-md-row align-items-md-center position-relative">
+                        <div class="circled_icon_container icon_box">
+                            <div class="benefit_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="38" height="35" viewBox="0 0 38 35" fill="none">
+                                    <g filter="url(#filter0_d_2_578)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5443 10.9771C24.5443 14.11 22.0468 16.6221 18.932 16.6221C15.8172 16.6221 13.3196 14.11 13.3196 10.9771C13.3196 7.843 15.8172 5.33331 18.932 5.33331C22.0468 5.33331 24.5443 7.843 24.5443 10.9771ZM18.9319 26.667C14.357 26.667 10.4507 25.9418 10.4507 23.0406C10.4507 20.1382 14.332 19.3865 18.9319 19.3865C23.5068 19.3865 27.4132 20.1118 27.4132 23.0142C27.4132 25.9153 23.5319 26.667 18.9319 26.667ZM26.9427 11.0789C26.9427 12.676 26.4664 14.1638 25.6306 15.4007C25.5447 15.5279 25.6211 15.6997 25.7727 15.7261C25.9816 15.7621 26.1977 15.7825 26.4174 15.7885C28.6082 15.8462 30.5745 14.428 31.1177 12.293C31.9223 9.12163 29.5597 6.27451 26.5511 6.27451C26.224 6.27451 25.9112 6.30933 25.6068 6.37177C25.565 6.38138 25.5208 6.40059 25.4969 6.43782C25.4683 6.48345 25.4898 6.54469 25.5184 6.58432C26.4222 7.85837 26.9427 9.41222 26.9427 11.0789ZM30.5709 18.0167C32.0429 18.3061 33.0112 18.8969 33.4123 19.7555C33.7514 20.4604 33.7514 21.2781 33.4123 21.9818C32.7986 23.3135 30.8204 23.741 30.0515 23.8515C29.8928 23.8755 29.765 23.7374 29.7817 23.5777C30.1745 19.8876 27.0502 18.138 26.2419 17.7357C26.2073 17.7177 26.2001 17.6901 26.2037 17.6733C26.2061 17.6613 26.2204 17.6421 26.2467 17.6385C27.9957 17.6061 29.876 17.8462 30.5709 18.0167ZM11.5827 15.7884C11.8024 15.7824 12.0173 15.7632 12.2274 15.726C12.379 15.6995 12.4555 15.5278 12.3695 15.4005C11.5338 14.1637 11.0574 12.6759 11.0574 11.0788C11.0574 9.4121 11.578 7.85825 12.4817 6.5842C12.5104 6.54457 12.5307 6.48333 12.5032 6.4377C12.4793 6.40167 12.434 6.38126 12.3934 6.37165C12.0877 6.30921 11.7749 6.27439 11.4478 6.27439C8.43927 6.27439 6.0766 9.12151 6.88246 12.2928C7.42567 14.4279 9.39198 15.846 11.5827 15.7884ZM11.7958 17.6722C11.7994 17.6902 11.7923 17.7166 11.7588 17.7358C10.9494 18.1381 7.82502 19.8876 8.21781 23.5765C8.23452 23.7374 8.10797 23.8743 7.94919 23.8515C7.18033 23.741 5.20209 23.3136 4.58844 21.9819C4.24819 21.277 4.24819 20.4604 4.58844 19.7556C4.98958 18.897 5.95662 18.3062 7.42866 18.0156C8.12469 17.8463 10.0038 17.6061 11.7541 17.6385C11.7803 17.6421 11.7934 17.6613 11.7958 17.6722Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_2_578" x="-1" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_578"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_578" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="benefit_text">
+                            <h5>Szeroka wiedza</h5>
+                            <p>Jesteśmy zespołem interdyscyplinarnych specjalistów z różnych dziedzin</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_545" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_545)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.205 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5379 247.134 64.4177 189.609C56.2828 143.368 218.746 199.983 244.209 62.2689Z" fill="#022140"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="#022140"/>
+                            </g>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container_hover" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_533" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_533)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.204 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5378 247.134 64.4176 189.609C56.2827 143.368 218.746 199.983 244.209 62.2689Z" fill="white"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="white"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="benefit bg_aqua_light d-flex flex-column flex-md-row align-items-md-center position-relative">
+                        <div class="circled_icon_container icon_box">
+                            <div class="benefit_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="36" height="38" viewBox="0 0 36 38" fill="none">
+                                    <g filter="url(#filter0_d_2_590)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2267 2.6665H23.7867C28.3067 2.6665 31.3334 5.83984 31.3334 10.5598V21.4545C31.3334 26.1598 28.3067 29.3332 23.7867 29.3332H12.2267C7.70675 29.3332 4.66675 26.1598 4.66675 21.4545V10.5598C4.66675 5.83984 7.70675 2.6665 12.2267 2.6665ZM17.2401 19.9868L23.5735 13.6535C24.0268 13.2002 24.0268 12.4668 23.5735 12.0002C23.1201 11.5468 22.3735 11.5468 21.9201 12.0002L16.4135 17.5068L14.0801 15.1735C13.6268 14.7202 12.8801 14.7202 12.4268 15.1735C11.9735 15.6268 11.9735 16.3602 12.4268 16.8268L15.6001 19.9868C15.8268 20.2135 16.1201 20.3202 16.4135 20.3202C16.7201 20.3202 17.0135 20.2135 17.2401 19.9868Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_2_590" x="-2" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_590"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_590" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="benefit_text">
+                            <h5>Szybkość działania</h5>
+                            <p>Zadania realizujemy w możliwie jak najkrótszym czasie</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_545" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_545)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.205 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5379 247.134 64.4177 189.609C56.2828 143.368 218.746 199.983 244.209 62.2689Z" fill="#022140"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="#022140"/>
+                            </g>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container_hover" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_533" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_533)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.204 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5378 247.134 64.4176 189.609C56.2827 143.368 218.746 199.983 244.209 62.2689Z" fill="white"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="white"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="benefit bg_aqua_light d-flex flex-column flex-md-row align-items-md-center position-relative">
+                        <div class="circled_icon_container icon_box">
+                            <div class="benefit_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="38" height="40" viewBox="0 0 38 40" fill="none">
+                                    <g filter="url(#filter0_d_2_602)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4624 3.13034C19.6886 2.92727 19.9879 2.82083 20.2942 2.83448C26.7695 3.02832 32.1812 7.72903 33.162 14.0117C33.1683 14.0492 33.1683 14.0875 33.162 14.125C33.1832 14.4223 33.0827 14.7155 32.8829 14.9399C32.683 15.1643 32.4003 15.3014 32.0972 15.3207L21.2179 16.0382C20.8582 16.0701 20.5013 15.9517 20.2352 15.7121C19.969 15.4725 19.8181 15.1339 19.8195 14.7795L19.0883 4.09318V3.91696C19.1016 3.61641 19.2362 3.3334 19.4624 3.13034ZM18.7162 18.8325L28.1088 18.2535H28.2099C28.6148 18.2601 29.0005 18.4243 29.282 18.71C29.5635 18.9956 29.7178 19.3793 29.7109 19.7765C29.3394 25.1912 25.3696 29.7153 19.9673 30.8808C14.565 32.0463 9.02695 29.5735 6.3744 24.8113C5.59443 23.4397 5.10155 21.9291 4.92468 20.3681C4.85609 19.9056 4.82605 19.4383 4.83488 18.971C4.85276 13.2133 8.95201 8.24366 14.6878 7.02594C15.3822 6.89597 16.0783 7.24266 16.3813 7.86927C16.5309 8.09492 16.5697 8.3712 16.5874 8.6414C16.6867 10.163 16.789 11.672 16.891 13.1751C16.9787 14.468 17.0661 15.7566 17.151 17.0452C17.1467 17.3487 17.1944 17.6508 17.2922 17.9388C17.5224 18.5055 18.0953 18.8651 18.7162 18.8325Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_2_602" x="-2" y="0" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="2"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_602"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_602" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="benefit_text">
+                            <h5>Adekwatna cena</h5>
+                            <p>Koszty usługi dopasowujemy indywidualnie do każdego zlecenia</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_545" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_545)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.205 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5379 247.134 64.4177 189.609C56.2828 143.368 218.746 199.983 244.209 62.2689Z" fill="#022140"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="#022140"/>
+                            </g>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="position-absolute benefit_svg_container_hover" width="314" height="193" viewBox="0 0 314 193" fill="none">
+                            <g opacity="0.05">
+                            <mask id="mask0_2_533" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="314" height="193">
+                            <rect width="314" height="193" rx="25" fill="#ECF5FF"/>
+                            </mask>
+                            <g mask="url(#mask0_2_533)">
+                            <path opacity="0.5" d="M244.209 62.2689C264.578 -47.9028 408.027 20.3663 477.204 68.2723L453.379 152.882L293.399 314.669C196.737 259.612 74.5378 247.134 64.4176 189.609C56.2827 143.368 218.746 199.983 244.209 62.2689Z" fill="white"/>
+                            <path opacity="0.8" d="M246.218 119.237C301.258 21.65 414.766 132.799 464.639 200.572L414.631 272.86L210.786 373.933C137.239 290.472 25.7134 238.992 34.8207 181.297C42.1415 134.921 177.418 241.222 246.218 119.237Z" fill="white"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--profile_cooperation-->
+    <section class="profile_cooperation bg_aqua_light_opacity">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-12 col-lg-6">
+                    <div class="profile_text text-center text-lg-start">
+                        <h2 class="secodary_font">Profil współpracy</h2>
+                        <p class="common_text">
+                            Zyskaliśmy reputację wiarygodnej agencji, dzięki skutecznej realizacji zamówień i elastycznemu podejściu do każdego z naszych partnerów biznesowych. Cechuje nas szybkie i skuteczne podejście do pracy. Doskonale znamy Prawo Pracy i proces legalizacji zatrudnienia cudzoziemców w Polsce. Jesteśmy wiarygodnym partnerem i dajemy gwarancję legalności wszystkich podejmowanych działań.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 profile_cols d-flex flex-column justify-content-between">
+                    <div class="d-flex justify-content-between">
+                        <div class="profile_part text-center">
+                            <div class="icon_container mx-auto icon_box">
+                                <div class="svg_container">
+                                    <img src="img/Zakłady.svg" class="img-fluid" alt="Zakłady produkcyjne">
+                                </div>
+                            </div>
+                            <h5>Zakłady <br> produkcyjne</h5>
+                        </div>
+                        <div class="profile_part text-center">
+                            <div class="icon_container mx-auto icon_box">
+                                <div class="svg_container">
+                                    <img src="img/budowlane.svg" class="img-fluid" alt="Obiekty budowlane">
+                                </div>
+                            </div>
+                            <h5>Obiekty <br> budowlane </h5>
+                        </div>
+                        <div class="profile_part text-center">
+                            <div class="icon_container mx-auto icon_box">
+                                <div class="svg_container">
+                                    <img src="img/Location.svg" class="img-fluid" alt="Centra logistyczne">
+                                </div>
+                            </div>
+                            <h5>Centra <br> logistyczne </h5>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between profile_parts">
+                        <div class="profile_part text-center">
+                            <div class="icon_container mx-auto icon_box">
+                                <div class="svg_container">
+                                    <img src="img/Sieci.svg" class="img-fluid" alt="Sieci Handlowe">
+                                </div>
+                            </div>
+                            <h5>Sieci Handlowe</h5>
+                        </div>
+                        <div class="profile_part text-center">
+                            <div class="icon_container mx-auto icon_box">
+                                <div class="svg_container">
+                                    <img src="img/DZIAŁY IT.svg" class="img-fluid" alt="DZIAŁY IT ">
+                                </div>
+                            </div>
+                            <h5>DZIAŁY IT </h5>
+                        </div>
+                        <div class="profile_part text-center">
+                            <div class="icon_container mx-auto icon_box">
+                                <div class="svg_container">
+                                    <img src="img/rolne.svg" class="img-fluid" alt="gospodarstwA rolne">
+                                </div>
+                            </div>
+                            <h5>gospodarstwA<br>rolne</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--partners-->
+    <section class="partners_slider">
+        <div class="partner_logo">
+            <img src="img/c9468893-frame_105u018000000000000000 1 (1).png" class="img-fluid" alt="">
+        </div>
+        <div class="partner_logo">
+            <img src="img/logo-1.png 1 (1).png" class="img-fluid" alt="partner logo">
+        </div>
+        <div class="partner_logo">
+            <img src="img/e-work-logo 1 (2).png" class="img-fluid" alt="partner logo">
+        </div>
+        <div class="partner_logo">
+            <img src="img/incons.png" class="img-fluid" alt="incons">
+        </div>
+        <div class="partner_logo">
+            <img src="img/HAMMER-logo 1 (1).png" class="img-fluid" alt="HAMMER">
+        </div>
+        <div class="partner_logo">
+            <img src="img/cropped-interwork-logo 1 (1).png" class="img-fluid" alt="cropped-interwork-logo">
+        </div>
+        <div class="partner_logo">
+            <img src="img/pngegg 1 (1).png" class="img-fluid" alt="pngegg">
+        </div>
+    </section>
+    <!--Contact-->
+    <section class="contact container" id="contact">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
+                <div class="contact_form">
+                    <form>
+                        <div class="form_group">
+                          <label for="user_name" class="form-label">Imię i nazwisko</label>
+                          <input type="text" name="first name" class="form-control" id="user_name">
+                        </div>
+                        <div class="form_group">
+                            <label for="user_email" class="form-label">Adres e-mail</label>
+                            <input type="email" name="user email" class="form-control" id="user_email">
+                        </div>
+                        <div class="form_group">
+                            <label for="user_tel" class="form-label">Telefon</label>
+                            <input type="tel" name="user tel" class="form-control" id="user_tel">
+                        </div>
+                        <div class="form_group">
+                            <label for="textarea" class="form-label">Wiadomość</label>
+                            <textarea class="form-control" id="textarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label form-label" for="exampleCheck1">Zgadzam się z Polityką Prywatności i warunkami korzystania z usługi.</label>
+                        </div>
+                        <button type="submit" class="main_btn form_btn">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7 d-flex align-items-center justify-content-center order-1 order-lg-2">
+                <div class="contact_text text-center text-lg-start">
+                    <h2 class="secodary_font">Jesteśmy gotowi do podjęcia współpracy od zaraz</h2>
+                    <p class="common_text">
+                        Zapraszamy do wypełnienia naszego formularza, a nasz menadżer odpowie w jak najkrótszym czasie. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <h3 class="mx-auto"><span>WDNL</span></h3>
+            <ul class="d-flex align-items-center justify-content-center social_links">
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=48793049827" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M0 23.2417L1.63418 17.2724C0.626435 15.5292 0.0998665 13.5455 0.0998665 11.5164C0.0998665 5.16582 5.27023 0 11.6208 0C14.7031 0 17.5947 1.20294 19.769 3.3773C21.9434 5.55621 23.1418 8.4478 23.1418 11.5255C23.1373 17.8761 17.9714 23.0419 11.6208 23.0419H11.6163C9.68705 23.0419 7.79413 22.5562 6.11001 21.6393L0 23.2417ZM6.39146 19.5557L6.74099 19.7645C8.21175 20.6361 9.89586 21.0991 11.6163 21.0991H11.6208C16.9001 21.0991 21.1944 16.8048 21.1944 11.5255C21.1944 8.96983 20.2003 6.56395 18.3936 4.75274C16.5869 2.94152 14.181 1.9474 11.6254 1.9474C6.34152 1.9474 2.04726 6.24166 2.04726 11.521C2.04726 13.3276 2.55114 15.0889 3.50895 16.6142L3.73592 16.9773L2.76903 20.509L6.39146 19.5557Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29074 7.49293C9.12312 7.13818 8.94852 7.13148 8.79139 7.12479C8.66218 7.1181 8.51552 7.12144 8.36536 7.12144C8.2187 7.12144 7.97775 7.17499 7.77522 7.38584C7.57268 7.59668 7 8.11209 7 9.15628C7 10.2005 7.79268 11.2112 7.90442 11.3518C8.01617 11.4923 9.4374 13.7045 11.6862 14.5546C13.5579 15.2608 13.9386 15.1202 14.3436 15.0868C14.7487 15.0533 15.6531 14.5747 15.8382 14.0794C16.0233 13.5841 16.0233 13.159 15.9674 13.072C15.9115 12.985 15.7649 12.9314 15.5414 12.8243C15.3214 12.7172 14.2319 12.2052 14.0294 12.1349C13.8268 12.0646 13.6802 12.0278 13.53 12.242C13.3833 12.4529 12.9573 12.9314 12.8281 13.072C12.6989 13.2126 12.5697 13.2326 12.3497 13.1256C12.1297 13.0185 11.4139 12.7942 10.5688 12.0713C9.90882 11.5091 9.46534 10.8129 9.33613 10.6021C9.20693 10.3912 9.32217 10.2741 9.43391 10.1704C9.53168 10.0766 9.6539 9.92269 9.76565 9.79886C9.87739 9.67503 9.91231 9.58801 9.98564 9.4441C10.059 9.30354 10.0241 9.17971 9.96818 9.07261C9.91929 8.96217 9.48978 7.91463 9.29074 7.49293Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/wdnl-pl/about/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" x="0" y="0" viewBox="0 0 100 100" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M90 90V60.7c0-14.4-3.1-25.4-19.9-25.4-8.1 0-13.5 4.4-15.7 8.6h-.2v-7.3H38.3V90h16.6V63.5c0-7 1.3-13.7 9.9-13.7 8.5 0 8.6 7.9 8.6 14.1v26H90zM11.3 36.6h16.6V90H11.3zM19.6 10c-5.3 0-9.6 4.3-9.6 9.6s4.3 9.7 9.6 9.7 9.6-4.4 9.6-9.7-4.3-9.6-9.6-9.6z" fill="#fff" opacity="1" data-original="#000000" class=""></path></g></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/wdnl.pl/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <g clip-path="url(#clip0_2_712)">
+                            <path d="M11 1.98086C13.9391 1.98086 14.2871 1.99375 15.443 2.04531C16.5172 2.09258 17.0973 2.27305 17.484 2.42344C17.9953 2.62109 18.3648 2.86172 18.7473 3.24414C19.134 3.63086 19.3703 3.99609 19.568 4.50742C19.7184 4.89414 19.8988 5.47852 19.9461 6.54844C19.9977 7.70859 20.0105 8.05664 20.0105 10.9914C20.0105 13.9305 19.9977 14.2785 19.9461 15.4344C19.8988 16.5086 19.7184 17.0887 19.568 17.4754C19.3703 17.9867 19.1297 18.3563 18.7473 18.7387C18.3605 19.1254 17.9953 19.3617 17.484 19.5594C17.0973 19.7098 16.5129 19.8902 15.443 19.9375C14.2828 19.9891 13.9348 20.002 11 20.002C8.06094 20.002 7.71289 19.9891 6.55703 19.9375C5.48281 19.8902 4.90273 19.7098 4.51602 19.5594C4.00469 19.3617 3.63516 19.1211 3.25273 18.7387C2.86602 18.352 2.62969 17.9867 2.43203 17.4754C2.28164 17.0887 2.10117 16.5043 2.05391 15.4344C2.00234 14.2742 1.98945 13.9262 1.98945 10.9914C1.98945 8.05234 2.00234 7.7043 2.05391 6.54844C2.10117 5.47422 2.28164 4.89414 2.43203 4.50742C2.62969 3.99609 2.87031 3.62656 3.25273 3.24414C3.63945 2.85742 4.00469 2.62109 4.51602 2.42344C4.90273 2.27305 5.48711 2.09258 6.55703 2.04531C7.71289 1.99375 8.06094 1.98086 11 1.98086ZM11 0C8.01367 0 7.63984 0.0128906 6.4668 0.0644531C5.29805 0.116016 4.49453 0.305078 3.79844 0.575781C3.07227 0.859375 2.45781 1.2332 1.84766 1.84766C1.2332 2.45781 0.859375 3.07227 0.575781 3.79414C0.305078 4.49453 0.116016 5.29375 0.0644531 6.4625C0.0128906 7.63984 0 8.01367 0 11C0 13.9863 0.0128906 14.3602 0.0644531 15.5332C0.116016 16.702 0.305078 17.5055 0.575781 18.2016C0.859375 18.9277 1.2332 19.5422 1.84766 20.1523C2.45781 20.7625 3.07227 21.1406 3.79414 21.4199C4.49453 21.6906 5.29375 21.8797 6.4625 21.9312C7.63555 21.9828 8.00937 21.9957 10.9957 21.9957C13.982 21.9957 14.3559 21.9828 15.5289 21.9312C16.6977 21.8797 17.5012 21.6906 18.1973 21.4199C18.9191 21.1406 19.5336 20.7625 20.1437 20.1523C20.7539 19.5422 21.132 18.9277 21.4113 18.2059C21.682 17.5055 21.8711 16.7063 21.9227 15.5375C21.9742 14.3645 21.9871 13.9906 21.9871 11.0043C21.9871 8.01797 21.9742 7.64414 21.9227 6.47109C21.8711 5.30234 21.682 4.49883 21.4113 3.80273C21.1406 3.07227 20.7668 2.45781 20.1523 1.84766C19.5422 1.2375 18.9277 0.859375 18.2059 0.580078C17.5055 0.309375 16.7062 0.120313 15.5375 0.06875C14.3602 0.0128906 13.9863 0 11 0Z" fill="white"/>
+                            <path d="M11 5.34961C7.88047 5.34961 5.34961 7.88047 5.34961 11C5.34961 14.1195 7.88047 16.6504 11 16.6504C14.1195 16.6504 16.6504 14.1195 16.6504 11C16.6504 7.88047 14.1195 5.34961 11 5.34961ZM11 14.6652C8.97617 14.6652 7.33477 13.0238 7.33477 11C7.33477 8.97617 8.97617 7.33477 11 7.33477C13.0238 7.33477 14.6652 8.97617 14.6652 11C14.6652 13.0238 13.0238 14.6652 11 14.6652Z" fill="white"/>
+                            <path d="M18.193 5.12615C18.193 5.85662 17.6 6.44529 16.8738 6.44529C16.1434 6.44529 15.5547 5.85232 15.5547 5.12615C15.5547 4.39568 16.1477 3.80701 16.8738 3.80701C17.6 3.80701 18.193 4.39998 18.193 5.12615Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_712">
+                            <rect width="22" height="22" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/WDNLpl/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17" fill="none">
+                            <path d="M8.39385 9.43359L8.85938 6.39844H5.94727V4.42969C5.94727 3.59933 6.35414 2.78906 7.65844 2.78906H8.98242V0.205078C8.98242 0.205078 7.78087 0 6.63202 0C4.23363 0 2.66602 1.45359 2.66602 4.08516V6.39844H0V9.43359H2.66602V16.7709C3.75315 16.941 4.86013 16.941 5.94727 16.7709V9.43359H8.39385Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright d-flex flex-column-reverse flex-md-row fz_sm_14 align-items-center">
+                <p>COPYRIGHT © 2024 WDNL. ALL RIGHTS RESERVED</p>
+                <p><span class="me-4"><a href="#">Terms</a></span> <span><a href="#">Privacy</a></span></p>
+            </div>
+        </div>
+    </footer>
+    <div class="back_to_top">
+        <img src="img/up.svg" class="img-fluid" alt="">
+    </div>
+    <!--Bootstrap 5 CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <!--swipper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!--Custom js -->
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>

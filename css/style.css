@@ -945,6 +945,11 @@ h3 span {
     margin-bottom: 25px;
 }
 /* ======================================= vacancy page styles ==================================*/
+.job_sum_img img.img-fluid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .work_Europe.container-fluid{
     padding-inline: 25px;
     padding-top: 13px;

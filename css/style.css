@@ -768,7 +768,7 @@ h3 span {
     padding-bottom: 86px;
 }
 .services h2 {
-    margin-bottom: 12px;
+    margin-bottom: 36px;
 }
 .services .form_btn {
     margin-top: 20px;
@@ -1279,6 +1279,9 @@ textarea.form-control {
         li{
             flex-grow: 1;
         }
+    }
+    .services h2{
+        margin-bottom: 8px;
     }
 }
 @media (max-width: 768px) {
@@ -2053,18 +2056,21 @@ textarea.form-control {
     .endless_possibilities {
         padding-block: 39px;
     }
-    /* .endless_possibilities .img-container {
-        margin-top: 35px;
-    } */
     .endless_possibilities_text {
         padding-left: 24px;
     }
     .endless_possibilities_text p{
         padding-right: 76px;
     }
-    /* .services_text{
+    .services_text.short_text{
         padding-right: 30px;
-    } */
+        p{
+            max-width: 520px;
+        }
+    }
+    .services_text.short_text h2{
+        margin-bottom: 30px;
+    }
     .location_text p {
         max-width: 559px;
     }

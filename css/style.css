@@ -321,6 +321,9 @@ h4{
 .location_text p:not(:first-child) {
     margin-bottom: 10px;
 }
+.better_life_path .location_text p:not(:last-child) {
+    margin-bottom: 10px;
+}
 .world_map_col {
     margin-top: 35px;
     padding-right: 0;
@@ -349,7 +352,6 @@ h4{
 .benefit h5 {
     font-weight: 700;
     margin-bottom: 5px;
-    text-transform: capitalize;
 }
 .icon_box.circled_icon_container, .circled_icon_container {
     border-radius: 32.5px;
@@ -745,10 +747,15 @@ h3 span {
     margin-bottom: 36px;
 }
 .offer_img_container {
-    width: 79px;
-    border-radius: 14px;
+    border-radius: 6px;
+    height: 79px;
     border: 1px solid #FFFFFF;
     overflow: hidden;
+}
+.offer_img_container .img-fluid{
+    height: 80px;
+    min-width: 80px;
+    max-width: 80px;
 }
 .offer_text h5{
     margin-bottom: 20px;
@@ -874,13 +881,12 @@ h3 span {
 }
 .slide-item img{
     width: 340px;
-    /* height: 369px; */
     object-fit: cover;
     border-radius: 14px;
-    &:first-child{
+}
+.slide-item img:first-child{
         margin-bottom: 34px;
     }
-}
 .portfolio{
     padding-block: 50px;
     h2{
@@ -1039,7 +1045,6 @@ h3 span {
 /* ======================================= Work page styles ==================================*/
 .job_sum_img{
     overflow: hidden;
-    border-radius: 4px;
 }
 .job_summary{
     padding: 12px 15px 17px 15px;
@@ -1096,7 +1101,7 @@ h3 span {
 }
 .job_sum_img{
     width: 112px;
-    height: 112px;
+    height: 138px;
     margin-right: 8px;        
 }
 textarea.form-control {
@@ -1207,7 +1212,7 @@ textarea.form-control {
         line-height: 18px;
     }
     .benefit h5{
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         line-height: 19.6px;
         word-break: break-word;
@@ -1225,7 +1230,7 @@ textarea.form-control {
         padding: 15px 10px 14px 10px;
     }
     .cooperation_benefits.ru_benefits .benefit{
-        min-height: 266px;
+        min-height: 285px;
     }
     .benefit_upper{
         gap: 6px;
@@ -1236,11 +1241,12 @@ textarea.form-control {
         margin-bottom: 38px;
     }
     .employee_countries h3:has( +.contact_form){
-        margin-bottom: 52px;
+        margin-top: 40.7px;
+        margin-bottom: 38px;
     }
     .employee_countries .common_text{
-        margin-top: 21.7px;
-        margin-bottom: 50px;
+        margin-top: 40.7px;
+        margin-bottom: 38px;
     }
     .endless_possibilities .img-container, .services .img-container{
         margin-top: 25px;
@@ -1268,7 +1274,6 @@ textarea.form-control {
         height: 375px;
     }
     .contact_offices .contact_office:first-child{
-        /* margin-top: -60px; */
         margin-bottom: 20px;
     }
     .contact_offices{
@@ -1313,20 +1318,25 @@ textarea.form-control {
     }
     header .dropdown-menu{
         .dropdown-item {
-            padding: 10px 16px 10px 10px;
+            padding: 10px 13px 10px 10px;
         }
     }
     .navbar-nav {
         height: 100%;
-        li{
-            flex-grow: 1;
-        }
     }
     .services h2{
         margin-bottom: 8px;
     }
 }
 @media (max-width: 768px) {
+    .job_offers.work_Europe_jobs{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-top: 32px;
+    }
+    .offer_img_container .img-fluid{
+        height: 40px;
+    }
     .hero_text p{
         font-size: 14px;
         line-height: 20.3px;
@@ -1636,9 +1646,6 @@ textarea.form-control {
         letter-spacing: 0.11em;
         min-width: unset !important;
     }
-    /* :not(:has(.)) .job_offers .main_btn{
-        min-width: 204px;
-    } */
     .endless_possibilities_text h2{
         margin-bottom: 10px;
     }
@@ -1679,7 +1686,6 @@ textarea.form-control {
     }
     .work_dev_head span{
         font-size: 10px;
-        /* line-height: 22.8px; */
         letter-spacing: 0.08em;
     }
     .work_dev_head{
@@ -1749,9 +1755,9 @@ textarea.form-control {
     }
     .slide-item img{
         display: block;
-        &:first-child {
-            margin-bottom: 11px;
-        }
+    }
+    .slide-item img:first-child {
+        margin-bottom: 11px;
     }
     .WDNL_recruiting{
         padding-top: 45px;
@@ -1873,10 +1879,6 @@ textarea.form-control {
         padding-top: 39px;
         padding-bottom: 32px;
     }
-    /* .partner {
-        padding-top: 118px;
-        padding-bottom: 105px;
-    } */
     .employers_hero .hero_text p {
         margin-bottom: 3px;
         margin-top: 0;
@@ -1966,8 +1968,6 @@ textarea.form-control {
     .work_box{
         box-shadow: 0px 29px 40.2px 0px #00000012;
         border-radius: 20px; 
-    }
-    .work_box{
         padding: 42px 48px 18px 64px;
     }
     .work_article{
@@ -1986,9 +1986,28 @@ textarea.form-control {
     }
 }
 @media (min-width: 992px) { 
-    .contact_offices .contact_office:first-child{
-        margin-top: -60px;
-        margin-bottom: 30px;
+    .work_box{
+        position: relative;
+    }
+    .work_img{
+        width: 360px;
+        overflow: hidden;
+        position: absolute;
+        top: -55px;
+        right: 0;
+    }
+    .work_img img{
+        border-radius: 14px;
+    }
+    .work_box .row{
+        margin-top: 61px;
+    }
+    .profile_cooperation .profile_part {
+    min-width: 127px;
+    }
+    .contact_office{
+        padding: 33px 71px 38px 69px;
+        margin-top: -80px;
     }
     .representative_text:not(.rep-ru-txt){
         padding-right: 57px;
@@ -2062,17 +2081,10 @@ textarea.form-control {
     .form-control{
         font-size: 14px;
     }
-    /* .partner_text {
-        max-width: 526px;
-        padding-left: 32px;
-    } */
     .partner_text {
         max-width: 605px;
         padding-left: 32px;
     }
-    /* .employers_contact .contact_text {
-        padding-left: 30px;
-    } */
     .contact_text:not(.con_tx_ru){
         max-width: 606px;
     }
@@ -2126,6 +2138,9 @@ textarea.form-control {
     .location_text p:not(:first-child) {
         margin-bottom: 15px;
     }
+    .better_life_path .location_text p:not(:last-child){
+        margin-bottom: 15px;
+    }
     .why_choose{
         padding-top: 95px;
         padding-bottom: 68px;
@@ -2143,9 +2158,6 @@ textarea.form-control {
     .why_choose .benefit {
         min-height: 255px;
     }
-    /* .why_choose.why_choose_ru .benefit{
-        min-height: 290px;
-    } */
     .partners_hero_img{
         margin-top: 20px;
     }
@@ -2169,7 +2181,7 @@ textarea.form-control {
     .job_sum_img {
         max-width: 200px;
         margin-right: 15px;
-        /* height: 197px; */
+        border-radius: 8px;
         width: 200px;
     }
     .svg_sum {
@@ -2181,11 +2193,9 @@ textarea.form-control {
     }
     .em_countries .country_div{
         padding: 9px 15px;
-        /* min-width: 200px; */
         border-radius: 10px;
         margin-bottom: 24px;
         gap: 14px;
-        width: fit-content;
     }
     .sum_item span{
         font-size: 16px;
@@ -2239,9 +2249,6 @@ textarea.form-control {
     .job_offers{
         padding-inline: 140px;
     }
-    /* .services_text {
-        padding-right: 53px;
-    } */
      .pl_srv_txt .main_btn{
         width: 96%;
      }
@@ -2251,6 +2258,13 @@ textarea.form-control {
     }
     .work_Europe.container-fluid{
         padding-inline: 72px;
+    }
+     .work_img{
+        width: 543px;
+        top: -100px;
+    }
+    .work_box .row{
+        margin-top: 155px;
     }
 }
 @media (min-width: 1400px) { 
@@ -2263,12 +2277,6 @@ textarea.form-control {
         padding-top: 91px;
         height: calc(100vh + 72px);
     }
-    /* .contact_text {
-        padding-left: unset;
-    } */
-    /* .partner_text p{
-        pdding-right: 32px;
-    } */
     .employee_countries{
         padding-top: 173px;
     }
@@ -2295,9 +2303,6 @@ textarea.form-control {
     .employee_countries form {
         z-index: 1;
     }
-    /* .why_choose{
-        padding-inline: 200px;
-    } */
     .job_offers{
         padding-inline: 160px;
     }
@@ -2326,10 +2331,7 @@ textarea.form-control {
     }
     .em_countries .country_div{
         min-width: 218px;
-    }
-    .contact_office{
-        padding: 33px 71px 38px 69px;
-        margin-top: -80px;
+        max-width: 218px;
     }
     .cont_off_detail{
         padding-left: 32px;
